@@ -4,69 +4,27 @@
             <element>name</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-05-11 19:30:37</sys_created_on>
-            <sys_id>57592521937803101b12f987dd03d630</sys_id>
+            <sys_created_on>2026-05-12 11:42:00</sys_created_on>
+            <sys_id>acb7c53193f083101b12f987dd03d64d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1974477_skillnow_course" sys_domain="global" view="Default view">ddfc68a9937003101b12f987dd03d6d4</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-05-11 19:30:37</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>integration_error_message</element>
-            <position>1</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-05-11 19:30:37</sys_created_on>
-            <sys_id>53592521937803101b12f987dd03d631</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_1974477_skillnow_course" sys_domain="global" view="Default view">ddfc68a9937003101b12f987dd03d6d4</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-05-11 19:30:37</sys_updated_on>
+            <sys_updated_on>2026-05-12 11:42:00</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>course_description</element>
-            <position>2</position>
+            <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-05-11 19:30:37</sys_created_on>
-            <sys_id>1f592521937803101b12f987dd03d631</sys_id>
+            <sys_created_on>2026-05-12 11:42:00</sys_created_on>
+            <sys_id>2cb7c53193f083101b12f987dd03d64e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1974477_skillnow_course" sys_domain="global" view="Default view">ddfc68a9937003101b12f987dd03d6d4</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-05-11 19:30:37</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>description</element>
-            <position>3</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-05-11 19:30:37</sys_created_on>
-            <sys_id>d7592521937803101b12f987dd03d632</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_1974477_skillnow_course" sys_domain="global" view="Default view">ddfc68a9937003101b12f987dd03d6d4</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-05-11 19:30:37</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>integration_state</element>
-            <position>4</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-05-11 19:30:37</sys_created_on>
-            <sys_id>93592521937803101b12f987dd03d633</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_1974477_skillnow_course" sys_domain="global" view="Default view">ddfc68a9937003101b12f987dd03d6d4</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-05-11 19:30:37</sys_updated_on>
+            <sys_updated_on>2026-05-12 11:42:00</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

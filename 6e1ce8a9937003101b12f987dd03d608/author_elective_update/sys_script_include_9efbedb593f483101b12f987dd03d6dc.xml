@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1974477_skillnow.SkillNowFilters</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>SkillNowFilters</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var SkillNowFilters = Class.create();
+SkillNowFilters.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    getAvailableSchedules: function() {
+        var user = gs.getUserID();
+        var enrolledSchedules = [];
+
+        
+        var gr = new GlideRecord('x_1974477_skillnow_enrollment');
+        gr.addQuery('opened_by', user);
+        gr.query();
+
+        while (gr.next()) {
+            enrolledSchedules.push(gr.getValue('schedule'));
+        }
+
+		var filter = 'training_date>=javascript:gs.daysAgoStart(0)';
+
+		if (enrolledSchedules.length > 0) {
+			filter += '^sys_idNOT IN' + enrolledSchedules.join(',');
+		}
+
+		return filter;
+    },
+
+    type: 'SkillNowFilters'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-12 14:37:21</sys_created_on>
+        <sys_id>9efbedb593f483101b12f987dd03d6dc</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>SkillNowFilters</sys_name>
+        <sys_package display_value="SkillNow" source="x_1974477_skillnow">6e1ce8a9937003101b12f987dd03d608</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</sys_scope>
+        <sys_update_name>sys_script_include_9efbedb593f483101b12f987dd03d6dc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-12 15:25:56</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</application>
+        <file_path/>
+        <instance_id>29db23acffd043d8c80bf8e4fc4fd991</instance_id>
+        <instance_name>dev381629</instance_name>
+        <name>sys_script_include_9efbedb593f483101b12f987dd03d6dc</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_1974477_skillnow.SkillNowFilters&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;SkillNowFilters&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var SkillNowFilters = Class.create();
+SkillNowFilters.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    getAvailableSchedules: function() {
+        var user = gs.getUserID();
+        var enrolledSchedules = [];
+
+        
+        var gr = new GlideRecord('x_1974477_skillnow_enrollment');
+        gr.addQuery('opened_by', user);
+        gr.query();
+
+        while (gr.next()) {
+            enrolledSchedules.push(gr.getValue('schedule'));
+        }
+
+		var filter = 'training_date&gt;=javascript:gs.daysAgoStart(0)';
+
+		if (enrolledSchedules.length &gt; 0) {
+			filter += '^sys_idNOT IN' + enrolledSchedules.join(',');
+		}
+
+		return filter;
+    },
+
+    type: 'SkillNowFilters'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-05-12 14:37:21&lt;/sys_created_on&gt;&lt;sys_id&gt;9efbedb593f483101b12f987dd03d6dc&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;SkillNowFilters&lt;/sys_name&gt;&lt;sys_package display_value="SkillNow" source="x_1974477_skillnow"&gt;6e1ce8a9937003101b12f987dd03d608&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="SkillNow"&gt;6e1ce8a9937003101b12f987dd03d608&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_9efbedb593f483101b12f987dd03d6dc&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-05-12 15:25:56&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1516360691</payload_hash>
+        <record_name>SkillNowFilters</record_name>
+        <reverted_from/>
+        <source>a21ce8a9937003101b12f987dd03d61e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-12 15:25:56</sys_created_on>
+        <sys_id>f8faf535937883101b12f987dd03d637</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19e1ccb75c30000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-12 15:25:56</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>f8faf5350578831000de24af66ca1636</update_guid>
+        <update_guid_history>f8faf5350578831000de24af66ca1636:-1516360691,dad6b9b934388310e0cd46df8e50f69a:-1304864214,e9df21bd70f4831059a2e6d745359bd7:1134310798</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-12 15:32:54</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>020dc469ed3e4b389059609a4f103904</sys_id>
+        <sys_metadata>9efbedb593f483101b12f987dd03d6dc</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SkillNowFilters</sys_name>
+        <sys_package display_value="SkillNow" source="x_1974477_skillnow">6e1ce8a9937003101b12f987dd03d608</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</sys_scope>
+        <sys_scope_delete display_value="">48140e46cd6e482287cb3ded7b473911</sys_scope_delete>
+        <sys_update_name>sys_script_include_9efbedb593f483101b12f987dd03d6dc</sys_update_name>
+        <sys_update_version display_value="sys_script_include_9efbedb593f483101b12f987dd03d6dc">f8faf535937883101b12f987dd03d637</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-12 15:32:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

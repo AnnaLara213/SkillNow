@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Client-side validation for the Training Date field. It triggers an asynchronous GlideAjax call to the TrainingCheckUtils script include whenever the training date or course is changed. If a conflict is detected (i.e., the course is already scheduled for that date), it clears the field, displays an error message, and alerts the user to prevent duplicate bookings.</description>
+        <field>training_date</field>
+        <global>true</global>
+        <isolate_script>false</isolate_script>
+        <messages/>
+        <name>Check Duplicate Schedule on Change</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+
+    var course = g_form.getValue('course');
+    if (course == '') {
+        // Se não tiver curso, não tem como validar duplicata ainda
+        return;
+    }
+
+    // 1. Verifique se este API Name está IGUAL ao do seu Script Include
+    var ga = new GlideAjax('x_1974477_skillnow.TrainingCheckUtils'); 
+    ga.addParam('sysparm_name', 'checkDuplicateSchedule');
+    ga.addParam('sysparm_course', course);
+    ga.addParam('sysparm_date', newValue);
+    ga.addParam('sysparm_sys_id', g_form.getUniqueValue());
+
+    ga.getXMLAnswer(function(answer) {
+        // Este alert vai nos dizer o que o servidor respondeu
+        // Se vier vazio ou erro, saberemos que o Script Include falhou
+        if (answer === "true") {
+            g_form.clearValue('training_date');
+            g_form.showFieldMsg('training_date', 'Duplicate: This course is already scheduled for this date.', 'error');
+            alert('Erro: Já existe um treinamento para este curso nesta data!');
+        } else {
+            // Se cair aqui, o servidor respondeu "false" ou algo inesperado
+            alert('Resposta do servidor: ' + answer);
+        }
+    });
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-11 19:28:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b367692d933803101b12f987dd03d67c</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Check Duplicate Schedule on Change</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SkillNow" source="x_1974477_skillnow">6e1ce8a9937003101b12f987dd03d608</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</sys_scope>
+        <sys_update_name>sys_script_client_b367692d933803101b12f987dd03d67c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-11 20:17:33</sys_updated_on>
+        <table>x_1974477_skillnow_training_schedule</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</application>
+        <file_path/>
+        <instance_id>29db23acffd043d8c80bf8e4fc4fd991</instance_id>
+        <instance_name>dev381629</instance_name>
+        <name>sys_script_client_b367692d933803101b12f987dd03d67c</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;Client-side validation for the Training Date field. It triggers an asynchronous GlideAjax call to the TrainingCheckUtils script include whenever the training date or course is changed. If a conflict is detected (i.e., the course is already scheduled for that date), it clears the field, displays an error message, and alerts the user to prevent duplicate bookings.&lt;/description&gt;&lt;field&gt;training_date&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Check Duplicate Schedule on Change&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+
+    var course = g_form.getValue('course');
+    if (course == '') {
+        // Se não tiver curso, não tem como validar duplicata ainda
+        return;
+    }
+
+    // 1. Verifique se este API Name está IGUAL ao do seu Script Include
+    var ga = new GlideAjax('x_1974477_skillnow.TrainingCheckUtils'); 
+    ga.addParam('sysparm_name', 'checkDuplicateSchedule');
+    ga.addParam('sysparm_course', course);
+    ga.addParam('sysparm_date', newValue);
+    ga.addParam('sysparm_sys_id', g_form.getUniqueValue());
+
+    ga.getXMLAnswer(function(answer) {
+        // Este alert vai nos dizer o que o servidor respondeu
+        // Se vier vazio ou erro, saberemos que o Script Include falhou
+        if (answer === "true") {
+            g_form.clearValue('training_date');
+            g_form.showFieldMsg('training_date', 'Duplicate: This course is already scheduled for this date.', 'error');
+            alert('Erro: Já existe um treinamento para este curso nesta data!');
+        } else {
+            // Se cair aqui, o servidor respondeu "false" ou algo inesperado
+            alert('Resposta do servidor: ' + answer);
+        }
+    });
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-05-11 19:28:23&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;b367692d933803101b12f987dd03d67c&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Check Duplicate Schedule on Change&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="SkillNow" source="x_1974477_skillnow"&gt;6e1ce8a9937003101b12f987dd03d608&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SkillNow"&gt;6e1ce8a9937003101b12f987dd03d608&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_b367692d933803101b12f987dd03d67c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-05-11 20:17:33&lt;/sys_updated_on&gt;&lt;table&gt;x_1974477_skillnow_training_schedule&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-543843750</payload_hash>
+        <record_name>Check Duplicate Schedule on Change</record_name>
+        <reverted_from/>
+        <source>a21ce8a9937003101b12f987dd03d61e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-11 20:17:33</sys_created_on>
+        <sys_id>f21479a193b803101b12f987dd03d6e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19e18b015730000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-11 20:17:33</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>f21479a196b80310d0518693d091e1e5</update_guid>
+        <update_guid_history>f21479a196b80310d0518693d091e1e5:-543843750,def179adb3780310e3e78bbd2f46dc22:-565956005,7161b16dc87803105fd2104225f1a6c1:-312408726,487071ad9c780310a1219db787f3be3c:-1357114113,aad82d6dd338031005e8bc662c98d607:-307176291</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-11 20:24:34</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>291b392d5cea4ffaafb7dc17755e70e4</sys_id>
+        <sys_metadata>b367692d933803101b12f987dd03d67c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Check Duplicate Schedule on Change</sys_name>
+        <sys_package display_value="SkillNow" source="x_1974477_skillnow">6e1ce8a9937003101b12f987dd03d608</sys_package>
+        <sys_parent display_value="Skillnow Training Schedule">7ea3306993b003101b12f987dd03d6f3</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</sys_scope>
+        <sys_scope_delete display_value="">48140e46cd6e482287cb3ded7b473911</sys_scope_delete>
+        <sys_update_name>sys_script_client_b367692d933803101b12f987dd03d67c</sys_update_name>
+        <sys_update_version display_value="sys_script_client_b367692d933803101b12f987dd03d67c">f21479a193b803101b12f987dd03d6e6</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-11 20:24:34</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -13,7 +13,7 @@
         <mobile_title>Courses</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name>x_1974477_skillnow_course</name>
-        <order>100</order>
+        <order>900</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
@@ -25,7 +25,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>cd880d21937403101b12f987dd03d651</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Courses</sys_name>
         <sys_overrides/>
         <sys_package display_value="SkillNow" source="x_1974477_skillnow">6e1ce8a9937003101b12f987dd03d608</sys_package>
@@ -33,7 +33,7 @@
         <sys_scope display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</sys_scope>
         <sys_update_name>sys_app_module_cd880d21937403101b12f987dd03d651</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-11 17:07:45</sys_updated_on>
+        <sys_updated_on>2026-05-12 18:37:45</sys_updated_on>
         <timeline_page/>
         <title>Courses</title>
         <uncancelable>false</uncancelable>

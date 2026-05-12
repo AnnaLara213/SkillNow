@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-11 15:36:04</sys_created_on>
+        <sys_id>aba3b06993b003101b12f987dd03d666</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1974477_skillnow_training_schedule.x_1974477_skillnow.sn_instructor</sys_name>
+        <sys_package display_value="SkillNow" source="x_1974477_skillnow">6e1ce8a9937003101b12f987dd03d608</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</sys_scope>
+        <sys_security_acl display_value="x_1974477_skillnow_training_schedule">27a3b06993b003101b12f987dd03d661</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_aba3b06993b003101b12f987dd03d666</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-11 15:36:04</sys_updated_on>
+        <sys_user_role display_value="x_1974477_skillnow.sn_instructor" name="x_1974477_skillnow.sn_instructor">661ce8a9937003101b12f987dd03d647</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</application>
+        <file_path/>
+        <instance_id>29db23acffd043d8c80bf8e4fc4fd991</instance_id>
+        <instance_name>dev381629</instance_name>
+        <name>sys_security_acl_role_aba3b06993b003101b12f987dd03d666</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-11 15:36:04</sys_created_on><sys_id>aba3b06993b003101b12f987dd03d666</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1974477_skillnow_training_schedule.x_1974477_skillnow.sn_instructor</sys_name><sys_package display_value="SkillNow" source="x_1974477_skillnow">6e1ce8a9937003101b12f987dd03d608</sys_package><sys_policy/><sys_scope display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</sys_scope><sys_security_acl display_value="x_1974477_skillnow_training_schedule">27a3b06993b003101b12f987dd03d661</sys_security_acl><sys_update_name>sys_security_acl_role_aba3b06993b003101b12f987dd03d666</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-11 15:36:04</sys_updated_on><sys_user_role display_value="x_1974477_skillnow.sn_instructor" name="x_1974477_skillnow.sn_instructor">661ce8a9937003101b12f987dd03d647</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>85265473</payload_hash>
+        <record_name>x_1974477_skillnow_training_schedule.x_1974477_skillnow.sn_instructor</record_name>
+        <reverted_from/>
+        <source>a21ce8a9937003101b12f987dd03d61e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-11 15:36:04</sys_created_on>
+        <sys_id>afa3b06993b003101b12f987dd03d684</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19e17ae611a0000002</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-11 15:36:04</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>aba3b069e7b0031019e86fd62dd3c783</update_guid>
+        <update_guid_history>aba3b069e7b0031019e86fd62dd3c783:85265473</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_1974477_skillnow_training_schedule.x_1974477_skillnow.sn_instructor">4c6ab0a593f003101b12f987dd03d6c3</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-11 16:05:20</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>c365a593f2c742fea4b72c9694f81d44</sys_id>
+        <sys_metadata>aba3b06993b003101b12f987dd03d666</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1974477_skillnow_training_schedule.x_1974477_skillnow.sn_instructor</sys_name>
+        <sys_package display_value="SkillNow" source="x_1974477_skillnow">6e1ce8a9937003101b12f987dd03d608</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</sys_scope>
+        <sys_scope_delete display_value="">48140e46cd6e482287cb3ded7b473911</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_aba3b06993b003101b12f987dd03d666</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_aba3b06993b003101b12f987dd03d666">afa3b06993b003101b12f987dd03d684</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-11 16:05:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

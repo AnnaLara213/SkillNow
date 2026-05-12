@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="fcfca42d937003101b12f987dd03d61c" label="Course" max_length="40" name="x_1974477_skillnow_course" type="collection">
+        <element display="true" label="Name" max_length="100" name="name" type="string"/>
+        <element label="Integration Error Message" max_length="4000" name="integration_error_message" type="string"/>
+        <element label="Course Description" max_length="4000" name="course_description" type="string"/>
+        <element label="Description" max_length="4000" name="description" type="string"/>
+        <element choice="1" label="Integration State" max_length="40" name="integration_state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Integrating" sequence="0" value="integrating"/>
+                <element inactive_on_update="false" label="Error" sequence="2" value="error"/>
+                <element inactive_on_update="false" label="Success" sequence="1" value="success"/>
+            </choice>
+        </element>
+    </element>
+</database>

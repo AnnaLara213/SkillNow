@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="DELETE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>training_date</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-11 18:38:41</sys_created_on>
+        <sys_id>df6d55e593f403101b12f987dd03d64a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>training_date</sys_name>
+        <sys_package display_value="SkillNow" source="x_1974477_skillnow">6e1ce8a9937003101b12f987dd03d608</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</sys_scope>
+        <sys_update_name>sys_ui_policy_action_df6d55e593f403101b12f987dd03d64a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-11 18:38:41</sys_updated_on>
+        <table>x_1974477_skillnow_training_schedule</table>
+        <ui_policy display_value="Mandatory fields for Training Schedule">731d156993f403101b12f987dd03d65d</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+    <sys_translated_text action="DELETE" query="documentkey=df6d55e593f403101b12f987dd03d64a"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</application>
+        <file_path/>
+        <instance_id>29db23acffd043d8c80bf8e4fc4fd991</instance_id>
+        <instance_name>dev381629</instance_name>
+        <name>sys_ui_policy_action_df6d55e593f403101b12f987dd03d64a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>ignore</disabled><field>training_date</field><field_message/><field_message_type>none</field_message_type><mandatory>true</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-11 18:38:41</sys_created_on><sys_id>df6d55e593f403101b12f987dd03d64a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>training_date</sys_name><sys_package display_value="SkillNow" source="x_1974477_skillnow">6e1ce8a9937003101b12f987dd03d608</sys_package><sys_policy/><sys_scope display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</sys_scope><sys_update_name>sys_ui_policy_action_df6d55e593f403101b12f987dd03d64a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-11 18:38:41</sys_updated_on><table>x_1974477_skillnow_training_schedule</table><ui_policy display_value="Mandatory fields for Training Schedule">731d156993f403101b12f987dd03d65d</ui_policy><value/><value_action>ignore</value_action><visible>ignore</visible></sys_ui_policy_action><sys_translated_text action="delete_multiple" query="documentkey=df6d55e593f403101b12f987dd03d64a"/></record_update>]]></payload>
+        <payload_hash>-1157879107</payload_hash>
+        <record_name>training_date</record_name>
+        <reverted_from/>
+        <source>a21ce8a9937003101b12f987dd03d61e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-11 18:38:41</sys_created_on>
+        <sys_id>6a7d9d6993f403101b12f987dd03d63b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19e18558fe70000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-11 18:38:41</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>667d9d6941f4031067a792bc5618fb3a</update_guid>
+        <update_guid_history>667d9d6941f4031067a792bc5618fb3a:-1157879107</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-11 20:24:34</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>020b51186e6d461781478254f1fadb21</sys_id>
+        <sys_metadata>df6d55e593f403101b12f987dd03d64a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>training_date</sys_name>
+        <sys_package display_value="SkillNow" source="x_1974477_skillnow">6e1ce8a9937003101b12f987dd03d608</sys_package>
+        <sys_parent display_value="Mandatory fields for Training Schedule">731d156993f403101b12f987dd03d65d</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</sys_scope>
+        <sys_scope_delete display_value="">48140e46cd6e482287cb3ded7b473911</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_df6d55e593f403101b12f987dd03d64a</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_df6d55e593f403101b12f987dd03d64a">6a7d9d6993f403101b12f987dd03d63b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-11 20:24:34</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

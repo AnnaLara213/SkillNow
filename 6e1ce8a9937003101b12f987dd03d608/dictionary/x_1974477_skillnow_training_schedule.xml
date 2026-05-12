@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="7ea3306993b003101b12f987dd03d6f3" label="Training Schedule" max_length="40" name="x_1974477_skillnow_training_schedule" type="collection">
+        <element display="true" label="Course" max_length="32" name="course" reference="x_1974477_skillnow_course" type="reference"/>
+        <element label="Training Date" max_length="40" name="training_date" type="glide_date"/>
+        <element label="Slots" max_length="40" name="slots" type="integer"/>
+        <element label="Instructor" max_length="32" name="instructor" reference="sys_user" reference_qual="roles=x_1974477_skillnow.sn_instructor^EQ" reference_qual_condition="roles=x_1974477_skillnow.sn_instructor^EQ" type="reference"/>
+        <index name="index">
+            <element name="course"/>
+        </index>
+        <index name="index2">
+            <element name="instructor"/>
+        </index>
+    </element>
+</database>

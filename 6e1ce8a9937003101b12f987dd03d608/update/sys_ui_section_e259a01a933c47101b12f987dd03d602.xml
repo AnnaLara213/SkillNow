@@ -4,13 +4,13 @@
             <element>process_flow.xml</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-05-13 22:46:42</sys_created_on>
-            <sys_id>c769641a933c47101b12f987dd03d670</sys_id>
+            <sys_created_on>2026-05-14 15:09:36</sys_created_on>
+            <sys_id>016ac0aa93f4c7101b12f987dd03d62e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter display_value="Process Flow">f367a8d2933c47101b12f987dd03d653</sys_ui_formatter>
             <sys_ui_section caption="Enrollment" display_value="Enrollment" name="x_1974477_skillnow_enrollment" sys_domain="global" view="Default view">e259a01a933c47101b12f987dd03d602</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-05-13 22:46:42</sys_updated_on>
+            <sys_updated_on>2026-05-14 15:09:36</sys_updated_on>
             <sys_user/>
             <type>formatter</type>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>.begin_split</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-05-13 22:46:42</sys_created_on>
-            <sys_id>4f69641a933c47101b12f987dd03d671</sys_id>
+            <sys_created_on>2026-05-14 15:09:36</sys_created_on>
+            <sys_id>416ac0aa93f4c7101b12f987dd03d630</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Enrollment" display_value="Enrollment" name="x_1974477_skillnow_enrollment" sys_domain="global" view="Default view">e259a01a933c47101b12f987dd03d602</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-05-13 22:46:42</sys_updated_on>
+            <sys_updated_on>2026-05-14 15:09:36</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
@@ -32,139 +32,153 @@
             <element>number</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-05-13 22:46:42</sys_created_on>
-            <sys_id>cb69641a933c47101b12f987dd03d672</sys_id>
+            <sys_created_on>2026-05-14 15:09:36</sys_created_on>
+            <sys_id>cd6ac0aa93f4c7101b12f987dd03d630</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Enrollment" display_value="Enrollment" name="x_1974477_skillnow_enrollment" sys_domain="global" view="Default view">e259a01a933c47101b12f987dd03d602</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-05-13 22:46:42</sys_updated_on>
+            <sys_updated_on>2026-05-14 15:09:36</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>active</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-14 15:09:36</sys_created_on>
+            <sys_id>4d6ac0aa93f4c7101b12f987dd03d631</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Enrollment" display_value="Enrollment" name="x_1974477_skillnow_enrollment" sys_domain="global" view="Default view">e259a01a933c47101b12f987dd03d602</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-14 15:09:36</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>schedule</element>
-            <position>3</position>
+            <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-05-13 22:46:42</sys_created_on>
-            <sys_id>4b69641a933c47101b12f987dd03d673</sys_id>
+            <sys_created_on>2026-05-14 15:09:36</sys_created_on>
+            <sys_id>c96ac0aa93f4c7101b12f987dd03d632</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Enrollment" display_value="Enrollment" name="x_1974477_skillnow_enrollment" sys_domain="global" view="Default view">e259a01a933c47101b12f987dd03d602</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-05-13 22:46:42</sys_updated_on>
+            <sys_updated_on>2026-05-14 15:09:36</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>4</position>
+            <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-05-13 22:46:42</sys_created_on>
-            <sys_id>c769641a933c47101b12f987dd03d674</sys_id>
+            <sys_created_on>2026-05-14 15:09:36</sys_created_on>
+            <sys_id>496ac0aa93f4c7101b12f987dd03d633</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Enrollment" display_value="Enrollment" name="x_1974477_skillnow_enrollment" sys_domain="global" view="Default view">e259a01a933c47101b12f987dd03d602</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-05-13 22:46:42</sys_updated_on>
+            <sys_updated_on>2026-05-14 15:09:36</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>state</element>
-            <position>5</position>
+            <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-05-13 22:46:42</sys_created_on>
-            <sys_id>4769641a933c47101b12f987dd03d675</sys_id>
+            <sys_created_on>2026-05-14 15:09:36</sys_created_on>
+            <sys_id>c56ac0aa93f4c7101b12f987dd03d634</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Enrollment" display_value="Enrollment" name="x_1974477_skillnow_enrollment" sys_domain="global" view="Default view">e259a01a933c47101b12f987dd03d602</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-05-13 22:46:42</sys_updated_on>
+            <sys_updated_on>2026-05-14 15:09:36</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>opened_by</element>
-            <position>6</position>
+            <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-05-13 22:46:42</sys_created_on>
-            <sys_id>c369641a933c47101b12f987dd03d676</sys_id>
+            <sys_created_on>2026-05-14 15:09:36</sys_created_on>
+            <sys_id>456ac0aa93f4c7101b12f987dd03d635</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Enrollment" display_value="Enrollment" name="x_1974477_skillnow_enrollment" sys_domain="global" view="Default view">e259a01a933c47101b12f987dd03d602</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-05-13 22:46:42</sys_updated_on>
+            <sys_updated_on>2026-05-14 15:09:36</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.end_split</element>
-            <position>7</position>
+            <position>8</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-05-13 22:46:42</sys_created_on>
-            <sys_id>4369641a933c47101b12f987dd03d677</sys_id>
+            <sys_created_on>2026-05-14 15:09:36</sys_created_on>
+            <sys_id>c16ac0aa93f4c7101b12f987dd03d636</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Enrollment" display_value="Enrollment" name="x_1974477_skillnow_enrollment" sys_domain="global" view="Default view">e259a01a933c47101b12f987dd03d602</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-05-13 22:46:42</sys_updated_on>
+            <sys_updated_on>2026-05-14 15:09:36</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.begin_split</element>
-            <position>8</position>
+            <position>9</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-05-13 22:46:42</sys_created_on>
-            <sys_id>cf69641a933c47101b12f987dd03d677</sys_id>
+            <sys_created_on>2026-05-14 15:09:36</sys_created_on>
+            <sys_id>416ac0aa93f4c7101b12f987dd03d637</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Enrollment" display_value="Enrollment" name="x_1974477_skillnow_enrollment" sys_domain="global" view="Default view">e259a01a933c47101b12f987dd03d602</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-05-13 22:46:42</sys_updated_on>
+            <sys_updated_on>2026-05-14 15:09:36</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>schedule.instructor</element>
-            <position>9</position>
+            <position>10</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-05-13 22:46:42</sys_created_on>
-            <sys_id>4f69641a933c47101b12f987dd03d678</sys_id>
+            <sys_created_on>2026-05-14 15:09:36</sys_created_on>
+            <sys_id>cd6ac0aa93f4c7101b12f987dd03d637</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Enrollment" display_value="Enrollment" name="x_1974477_skillnow_enrollment" sys_domain="global" view="Default view">e259a01a933c47101b12f987dd03d602</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-05-13 22:46:42</sys_updated_on>
+            <sys_updated_on>2026-05-14 15:09:36</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>10</position>
+            <position>11</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-05-13 22:46:42</sys_created_on>
-            <sys_id>cb69641a933c47101b12f987dd03d679</sys_id>
+            <sys_created_on>2026-05-14 15:09:36</sys_created_on>
+            <sys_id>4d6ac0aa93f4c7101b12f987dd03d638</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Enrollment" display_value="Enrollment" name="x_1974477_skillnow_enrollment" sys_domain="global" view="Default view">e259a01a933c47101b12f987dd03d602</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-05-13 22:46:42</sys_updated_on>
+            <sys_updated_on>2026-05-14 15:09:36</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>schedule.training_date</element>
-            <position>11</position>
+            <position>12</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-05-13 22:46:42</sys_created_on>
-            <sys_id>4b69641a933c47101b12f987dd03d67a</sys_id>
+            <sys_created_on>2026-05-14 15:09:36</sys_created_on>
+            <sys_id>c96ac0aa93f4c7101b12f987dd03d639</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Enrollment" display_value="Enrollment" name="x_1974477_skillnow_enrollment" sys_domain="global" view="Default view">e259a01a933c47101b12f987dd03d602</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-05-13 22:46:42</sys_updated_on>
+            <sys_updated_on>2026-05-14 15:09:36</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

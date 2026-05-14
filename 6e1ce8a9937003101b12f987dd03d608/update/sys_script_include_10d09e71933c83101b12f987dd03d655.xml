@@ -80,7 +80,7 @@ SkillNowFilters.prototype = {
             var enrollmentGR = new GlideRecord('x_1974477_skillnow_enrollment');
             enrollmentGR.addQuery('schedule', schedID);
             
-			enrollmentGR.addQuery('state', 'IN', '1,2');
+			enrollmentGR.addQuery('state', 'IN', '1,3');
             
             enrollmentGR.query();
             var currentCount = enrollmentGR.getRowCount();
@@ -97,7 +97,7 @@ SkillNowFilters.prototype = {
         var enr = new GlideRecord('x_1974477_skillnow_enrollment');
         enr.addQuery('opened_by', userId);
 
-		enr.addQuery('state', 'IN', '1,2');
+		enr.addQuery('state', 'IN', '1,3');
      
         enr.query();
         while (enr.next()) {
@@ -112,13 +112,13 @@ SkillNowFilters.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-05-12 17:03:33</sys_created_on>
         <sys_id>10d09e71933c83101b12f987dd03d655</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>SkillNowFilters</sys_name>
         <sys_package display_value="SkillNow" source="x_1974477_skillnow">6e1ce8a9937003101b12f987dd03d608</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</sys_scope>
         <sys_update_name>sys_script_include_10d09e71933c83101b12f987dd03d655</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-13 15:22:55</sys_updated_on>
+        <sys_updated_on>2026-05-14 16:08:17</sys_updated_on>
     </sys_script_include>
 </record_update>

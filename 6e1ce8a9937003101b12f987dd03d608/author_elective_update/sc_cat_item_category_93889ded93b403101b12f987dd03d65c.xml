@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Create New Course">39edcda9937403101b12f987dd03d607</sc_cat_item>
+        <sc_category display_value="SkillNow">976899ed93b403101b12f987dd03d6c1</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-11 18:17:10</sys_created_on>
+        <sys_id>93889ded93b403101b12f987dd03d65c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SkillNow.Create New Course</sys_name>
+        <sys_package display_value="SkillNow" source="x_1974477_skillnow">6e1ce8a9937003101b12f987dd03d608</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</sys_scope>
+        <sys_update_name>sc_cat_item_category_93889ded93b403101b12f987dd03d65c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-11 18:17:10</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</application>
+        <file_path/>
+        <instance_id>29db23acffd043d8c80bf8e4fc4fd991</instance_id>
+        <instance_name>dev381629</instance_name>
+        <name>sc_cat_item_category_93889ded93b403101b12f987dd03d65c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Create New Course">39edcda9937403101b12f987dd03d607</sc_cat_item><sc_category display_value="SkillNow">976899ed93b403101b12f987dd03d6c1</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-11 18:17:10</sys_created_on><sys_id>93889ded93b403101b12f987dd03d65c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>SkillNow.Create New Course</sys_name><sys_package display_value="SkillNow" source="x_1974477_skillnow">6e1ce8a9937003101b12f987dd03d608</sys_package><sys_policy/><sys_scope display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</sys_scope><sys_update_name>sc_cat_item_category_93889ded93b403101b12f987dd03d65c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-11 18:17:10</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>310261495</payload_hash>
+        <record_name>SkillNow.Create New Course</record_name>
+        <reverted_from/>
+        <source>a21ce8a9937003101b12f987dd03d61e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-11 18:17:10</sys_created_on>
+        <sys_id>1b889ded93b403101b12f987dd03d663</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19e1841de3f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-11 18:17:10</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>17889deddfb403108160767522399162</update_guid>
+        <update_guid_history>17889deddfb403108160767522399162:310261495</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="SkillNow.Create New Course">30ca6b9a93f0c7101b12f987dd03d61a</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-14 12:51:25</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>0e695b2588fd497e922c6220a140fe01</sys_id>
+        <sys_metadata>93889ded93b403101b12f987dd03d65c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SkillNow.Create New Course</sys_name>
+        <sys_package display_value="SkillNow" source="x_1974477_skillnow">6e1ce8a9937003101b12f987dd03d608</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</sys_scope>
+        <sys_scope_delete display_value="">48140e46cd6e482287cb3ded7b473911</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_93889ded93b403101b12f987dd03d65c</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_93889ded93b403101b12f987dd03d65c">1b889ded93b403101b12f987dd03d663</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-14 12:51:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

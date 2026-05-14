@@ -8,14 +8,14 @@
         <hint/>
         <homepage/>
         <image/>
-        <link_type>LIST</link_type>
-        <map_page/>
+        <link_type>DIRECT</link_type>
+        <map_page display_value="All locations">ffee7e4ec0a8000c007a8387549d440f</map_page>
         <mobile_title>Dashboard</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name/>
         <order>600</order>
         <override_menu_roles>false</override_menu_roles>
-        <query/>
+        <query>now/platform-analytics-workspace/dashboards/params/edit/false/tab-sys-id/394fe55e933487101b12f987dd03d6af/sys-id/9a43611693f087101b12f987dd03d6ea</query>
         <report/>
         <require_confirmation>true</require_confirmation>
         <roles>x_1974477_skillnow.sn_admin</roles>
@@ -25,7 +25,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9c666e7993bc83101b12f987dd03d693</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Dashboard</sys_name>
         <sys_overrides/>
         <sys_package display_value="SkillNow" source="x_1974477_skillnow">6e1ce8a9937003101b12f987dd03d608</sys_package>
@@ -33,7 +33,7 @@
         <sys_scope display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</sys_scope>
         <sys_update_name>sys_app_module_9c666e7993bc83101b12f987dd03d693</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-12 18:36:33</sys_updated_on>
+        <sys_updated_on>2026-05-14 06:33:18</sys_updated_on>
         <timeline_page/>
         <title>Dashboard</title>
         <uncancelable>false</uncancelable>

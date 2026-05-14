@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="DELETE">
+        <canvas display_value="">b54fe55e933487101b12f987dd03d6b3</canvas>
+        <component display_value="Single score">d24d53f60350de7a652caf3188a46ed2</component>
+        <component_props>{"configVersion":"23.0.0-ci-SNAPSHOT","scoreSize":"xl","headingPosition":"top","sparklineStyle":"area","scoreIcon":"catalog-outline","iconStyle":"no-background","showScoreDate":false,"useRelativeScoreTime":true,"showScoreUpdateTime":true,"showZero":true,"colorConfig":{"type":"singleColor","values":[{"color":"f9394cc3730033000b9dff603ef6a73a","iconColor":"263fa77f9f5c73001bb9baac757fcf40","metric":"ZEdGaWJHVjRYekU1TnpRME56ZGZjMnRwYkd4dWIzZGZkSEpoYVc1cGJtZGZjMk5vWldSMWJHVXhOemM0TnpJNU5UVTRORFF5MTc3ODcyOTU2MDIwNw==","rules":[]}]},"newReporting":false,"enableAddZerosAtApi":true,"additionalGroupByConfig":[],"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"Training Schedule","sourceType":"table","tableOrViewName":"x_1974477_skillnow_training_schedule","filterQuery":"training_date&gt;javascript:gs.endOfToday()","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGV4XzE5NzQ0Nzdfc2tpbGxub3dfdHJhaW5pbmdfc2NoZWR1bGUxNzc4NzI5NTU4NDQy","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"wrapTitle":true,"showLoadingIndicator":false,"showHeaderSeparator":true,"contextMenuActions":[],"headerTitle":"Number of Future Schedules","headingLevel":2,"showBorder":true,"bareBorder":false,"telemetry":null,"showDataPassthrough":false,"showAdditionalGroupBySelector":false,"allowAdditionalGroupByPerMetric":false,"metrics":[{"dataSource":"dGFibGV4XzE5NzQ0Nzdfc2tpbGxub3dfdHJhaW5pbmdfc2NoZWR1bGUxNzc4NzI5NTU4NDQy","id":"ZEdGaWJHVjRYekU1TnpRME56ZGZjMnRwYkd4dWIzZGZkSEpoYVc1cGJtZGZjMk5vWldSMWJHVXhOemM0TnpJNU5UVTRORFF5MTc3ODcyOTU2MDIwNw==","aggregateFunction":"COUNT","numberFormat":{"customFormat":false},"axisId":"primary"}],"groupBy":null,"filterPerMetric":[],"sortBy":"value","sortByOrder":"desc","trendBy":null,"showChange":false,"showChangePercentage":false,"showTarget":false,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":false,"showSparkline":false,"showMetricLabel":false,"showThreshold":false,"showComment":false,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableClickAndStay":false,"showDataTable":false,"enableCustomEmptyState":false,"componentId":"mchmezd7","emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateHeadingLevel":3,"emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","refreshFrequency":null,"hideDevSettings":false,"configPropModifiers":{},"filterConfigurations":"@state.parFilters","showMaximumRange":false,"allowChangeDateRange":false,"showDateRangeByDefault":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"scoreType":null,"showChangeFrom":false,"useCurrentDateForEnd":false,"period":"M","useDataCache":false,"cacheExpirationTime":0,"showCacheTime":true,"dateFormat":"default","showRefresh":true,"showFilterAsSeparateSeries":false,"id":"colorConfig","value":{"type":"singleColor","values":[{"color":"f9394cc3730033000b9dff603ef6a73a","iconColor":"263fa77f9f5c73001bb9baac757fcf40","metric":"ZEdGaWJHVjRYekU1TnpRME56ZGZjMnRwYkd4dWIzZGZkSEpoYVc1cGJtZGZjMk5vWldSMWJHVXhOemM0TnpJNU5UVTRORFF5MTc3ODcyOTU2MDIwNw==","rules":[]}]},"noDebounce":true,"propLabel":"Colors"}</component_props>
+        <h>12</h>
+        <name/>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-14 03:51:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f54fe55e933487101b12f987dd03d6b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="SkillNow" source="x_1974477_skillnow">6e1ce8a9937003101b12f987dd03d608</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</sys_scope>
+        <sys_update_name>par_dashboard_widget_f54fe55e933487101b12f987dd03d6b7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-14 03:51:54</sys_updated_on>
+        <visualization/>
+        <w>12</w>
+        <widget_props/>
+        <x>0</x>
+        <y>0</y>
+    </par_dashboard_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</application>
+        <file_path/>
+        <instance_id>29db23acffd043d8c80bf8e4fc4fd991</instance_id>
+        <instance_name>dev381629</instance_name>
+        <name>par_dashboard_widget_f54fe55e933487101b12f987dd03d6b7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget"><par_dashboard_widget action="INSERT_OR_UPDATE"><canvas display_value="">b54fe55e933487101b12f987dd03d6b3</canvas><component display_value="Single score">d24d53f60350de7a652caf3188a46ed2</component><component_props>{"configVersion":"23.0.0-ci-SNAPSHOT","scoreSize":"xl","headingPosition":"top","sparklineStyle":"area","scoreIcon":"catalog-outline","iconStyle":"no-background","showScoreDate":false,"useRelativeScoreTime":true,"showScoreUpdateTime":true,"showZero":true,"colorConfig":{"type":"singleColor","values":[{"color":"f9394cc3730033000b9dff603ef6a73a","iconColor":"263fa77f9f5c73001bb9baac757fcf40","metric":"ZEdGaWJHVjRYekU1TnpRME56ZGZjMnRwYkd4dWIzZGZkSEpoYVc1cGJtZGZjMk5vWldSMWJHVXhOemM0TnpJNU5UVTRORFF5MTc3ODcyOTU2MDIwNw==","rules":[]}]},"newReporting":false,"enableAddZerosAtApi":true,"additionalGroupByConfig":[],"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"Training Schedule","sourceType":"table","tableOrViewName":"x_1974477_skillnow_training_schedule","filterQuery":"training_date&gt;javascript:gs.endOfToday()","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGV4XzE5NzQ0Nzdfc2tpbGxub3dfdHJhaW5pbmdfc2NoZWR1bGUxNzc4NzI5NTU4NDQy","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"wrapTitle":true,"showLoadingIndicator":false,"showHeaderSeparator":true,"contextMenuActions":[],"headerTitle":"Number of Future Schedules","headingLevel":2,"showBorder":true,"bareBorder":false,"telemetry":null,"showDataPassthrough":false,"showAdditionalGroupBySelector":false,"allowAdditionalGroupByPerMetric":false,"metrics":[{"dataSource":"dGFibGV4XzE5NzQ0Nzdfc2tpbGxub3dfdHJhaW5pbmdfc2NoZWR1bGUxNzc4NzI5NTU4NDQy","id":"ZEdGaWJHVjRYekU1TnpRME56ZGZjMnRwYkd4dWIzZGZkSEpoYVc1cGJtZGZjMk5vWldSMWJHVXhOemM0TnpJNU5UVTRORFF5MTc3ODcyOTU2MDIwNw==","aggregateFunction":"COUNT","numberFormat":{"customFormat":false},"axisId":"primary"}],"groupBy":null,"filterPerMetric":[],"sortBy":"value","sortByOrder":"desc","trendBy":null,"showChange":false,"showChangePercentage":false,"showTarget":false,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":false,"showSparkline":false,"showMetricLabel":false,"showThreshold":false,"showComment":false,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableClickAndStay":false,"showDataTable":false,"enableCustomEmptyState":false,"componentId":"mchmezd7","emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateHeadingLevel":3,"emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","refreshFrequency":null,"hideDevSettings":false,"configPropModifiers":{},"filterConfigurations":"@state.parFilters","showMaximumRange":false,"allowChangeDateRange":false,"showDateRangeByDefault":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"scoreType":null,"showChangeFrom":false,"useCurrentDateForEnd":false,"period":"M","useDataCache":false,"cacheExpirationTime":0,"showCacheTime":true,"dateFormat":"default","showRefresh":true,"showFilterAsSeparateSeries":false,"id":"colorConfig","value":{"type":"singleColor","values":[{"color":"f9394cc3730033000b9dff603ef6a73a","iconColor":"263fa77f9f5c73001bb9baac757fcf40","metric":"ZEdGaWJHVjRYekU1TnpRME56ZGZjMnRwYkd4dWIzZGZkSEpoYVc1cGJtZGZjMk5vWldSMWJHVXhOemM0TnpJNU5UVTRORFF5MTc3ODcyOTU2MDIwNw==","rules":[]}]},"noDebounce":true,"propLabel":"Colors"}</component_props><h>12</h><name/><stored_component/><sys_class_name>par_dashboard_widget</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-14 03:51:54</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>f54fe55e933487101b12f987dd03d6b7</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="SkillNow" source="x_1974477_skillnow">6e1ce8a9937003101b12f987dd03d608</sys_package><sys_policy/><sys_scope display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</sys_scope><sys_update_name>par_dashboard_widget_f54fe55e933487101b12f987dd03d6b7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-14 03:51:54</sys_updated_on><visualization/><w>12</w><widget_props/><x>0</x><y>0</y></par_dashboard_widget></record_update>]]></payload>
+        <payload_hash>779964637</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>fc5ee7b193f4c3101b12f987dd03d6e0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-14 03:51:54</sys_created_on>
+        <sys_id>714fe55e933487101b12f987dd03d6bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19e249cc5290000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-14 03:51:54</sys_updated_on>
+        <type>PAR Dashboard Widget</type>
+        <update_guid>7d4fe55e7f3487102bc5ef83e38056b9</update_guid>
+        <update_guid_history>7d4fe55e7f3487102bc5ef83e38056b9:779964637</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">314fe55e933487101b12f987dd03d6ed</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-14 03:51:54</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_widget">par_dashboard_widget</sys_db_object>
+        <sys_id>2a5c0c069bf14a6491a57e60412ac119</sys_id>
+        <sys_metadata>f54fe55e933487101b12f987dd03d6b7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SkillNow" source="x_1974477_skillnow">6e1ce8a9937003101b12f987dd03d608</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</sys_scope>
+        <sys_scope_delete display_value="">48140e46cd6e482287cb3ded7b473911</sys_scope_delete>
+        <sys_update_name>par_dashboard_widget_f54fe55e933487101b12f987dd03d6b7</sys_update_name>
+        <sys_update_version display_value="par_dashboard_widget_f54fe55e933487101b12f987dd03d6b7">714fe55e933487101b12f987dd03d6bb</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-14 03:51:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

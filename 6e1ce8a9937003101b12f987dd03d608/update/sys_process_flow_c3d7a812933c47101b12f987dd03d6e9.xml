@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow">
+    <sys_process_flow action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1974477_skillnow_enrollment">state=4^EQ<item display_value="Awaiting Manager's Approval" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="4"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <description/>
+        <label>Awaiting Manager's Approval</label>
+        <name>Awaiting Manager's Approval</name>
+        <order>20</order>
+        <sys_class_name>sys_process_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-13 22:40:12</sys_created_on>
+        <sys_id>c3d7a812933c47101b12f987dd03d6e9</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Awaiting Manager's Approval</sys_name>
+        <sys_package display_value="SkillNow" source="x_1974477_skillnow">6e1ce8a9937003101b12f987dd03d608</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</sys_scope>
+        <sys_update_name>sys_process_flow_c3d7a812933c47101b12f987dd03d6e9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-13 23:44:19</sys_updated_on>
+        <table>x_1974477_skillnow_enrollment</table>
+    </sys_process_flow>
+</record_update>

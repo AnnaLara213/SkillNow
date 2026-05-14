@@ -98,14 +98,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-05-11 21:07:48</sys_created_on>
         <sys_id>f29ff9a993f803101b12f987dd03d64b</sys_id>
-        <sys_mod_count>62</sys_mod_count>
+        <sys_mod_count>63</sys_mod_count>
         <sys_name>Training Enrollment</sys_name>
         <sys_package display_value="SkillNow" source="x_1974477_skillnow">6e1ce8a9937003101b12f987dd03d608</sys_package>
         <sys_policy/>
         <sys_scope display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</sys_scope>
         <sys_update_name>sc_cat_item_producer_f29ff9a993f803101b12f987dd03d64b</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-05-12 23:10:44</sys_updated_on>
+        <sys_updated_on>2026-05-13 12:14:17</sys_updated_on>
         <table_name>x_1974477_skillnow_enrollment</table_name>
         <taxonomy_topic/>
         <template/>
@@ -113,7 +113,7 @@
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>62</version>
+        <version>63</version>
         <view/>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>

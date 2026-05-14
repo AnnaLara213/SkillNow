@@ -10,7 +10,7 @@
         <condition/>
         <content_type>text/html</content_type>
         <default_interval/>
-        <description>Will send a enrollment confirmation email to SkillNow Requester User.</description>
+        <description>Will send a enrollment approval email to SkillNow Requester User.</description>
         <digest_from/>
         <digest_html/>
         <digest_reply_to/>
@@ -36,30 +36,26 @@
         <item_table/>
         <mandatory>false</mandatory>
         <message/>
-        <message_html><![CDATA[<div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #f4f4f4; padding: 20px;">
-<div style="max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-<div style="background-color: #278ef5; padding: 30px; text-align: center;">
-<h1 style="color: #ffffff; margin: 0; font-size: 24px;">Enrollment Confirmed!</h1>
+        <message_html><![CDATA[<div style="font-family: 'Segoe UI', Arial, sans-serif; max-width: 600px; margin: auto; border: 1px solid #e0e0e0; border-radius: 10px; overflow: hidden;">
+<div style="background-color: #d32f2f; color: white; padding: 20px; text-align: center;">
+<h2 style="margin: 0;">Enrollment Update</h2>
 </div>
-<div style="padding: 30px; color: #333333; line-height: 1.6;">
-<p style="font-size: 18px;">Hello, <strong>${opened_by}</strong>!</p>
-<p>Your registration for the upcoming training has been successfully processed. We are excited to have you join this session!</p>
-<div style="background-color: #f9f9f9; border-left: 4px solid #278ef5; padding: 15px; margin: 20px 0;">
+<div style="padding: 30px; color: #333; line-height: 1.6;">
+<p>Hello <strong>${opened_by}</strong>,</p>
+<p>We are writing to inform you that your request to participate in the training has been <strong>declined</strong> by your manager.</p>
+<div style="background-color: #fff5f5; border-left: 4px solid #d32f2f; padding: 15px; margin: 20px 0;">
 <p style="margin: 5px 0;"><strong>Course:</strong> ${schedule.course}</p>
-<p style="margin: 5px 0;"><strong>Date:</strong> ${schedule.training_date}</p>
-<p style="margin: 5px 0;"><strong>Instructor:</strong> ${schedule.instructor}</p>
+<p style="margin: 5px 0;"><strong>Status:</strong> Rejected</p>
+<p style="margin: 10px 0 5px 0;"><strong>Reproval Reason:</strong></p>
+<p style="margin: 0; font-style: italic; color: #555;">"${reproval_reason}"</p>
 </div>
-<p>Please make sure to add this date to your calendar. If you have any questions or need to cancel your attendance, please contact the training administrator.</p>
+<p>If you have any questions regarding this decision, please reach out directly to your supervisor.</p>
 </div>
-<div style="background-color: #eeeeee; padding: 20px; text-align: center; color: #777777; font-size: 12px;">
-<p style="margin: 0;">SkillNow Learning Management System</p>
-<p style="margin: 5px 0;">Automated notification - please do not reply to this email.</p>
-</div>
-</div>
+<div style="background-color: #f4f4f4; padding: 15px; text-align: center; font-size: 12px; color: #777;">Sent by SkillNow Learning Management System</div>
 </div>]]></message_html>
         <message_list/>
         <message_text/>
-        <name>SkillNow Resquest Email</name>
+        <name>SkillNow Reproved Notification</name>
         <omit_watermark>false</omit_watermark>
         <order>100</order>
         <push_message_only>false</push_message_only>
@@ -70,23 +66,23 @@
         <send_self>true</send_self>
         <sms_alternate/>
         <style/>
-        <subject>Confirmation: Your enrollment request for ${schedule.course} is successful</subject>
+        <subject>Enrollment Update: ${schedule.course}</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-05-12 14:01:53</sys_created_on>
+        <sys_created_on>2026-05-13 13:16:40</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>3ca5adb993b483101b12f987dd03d632</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>SkillNow Resquest Email</sys_name>
+        <sys_id>9a36628a933c07101b12f987dd03d695</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>SkillNow Reproved Notification</sys_name>
         <sys_overrides/>
         <sys_package display_value="SkillNow" source="x_1974477_skillnow">6e1ce8a9937003101b12f987dd03d608</sys_package>
         <sys_policy/>
         <sys_scope display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</sys_scope>
-        <sys_update_name>sysevent_email_action_3ca5adb993b483101b12f987dd03d632</sys_update_name>
+        <sys_update_name>sysevent_email_action_9a36628a933c07101b12f987dd03d695</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-13 14:01:13</sys_updated_on>
+        <sys_updated_on>2026-05-13 15:28:04</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Employee notification template">1462e7ca918a3010f877b1d70a4d6a3d</template>
         <type>email</type>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>skillnow_enrollment_table</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript(current, template, email, email_action, event) {
+    
+
+    template.print('<div style="text-align: center; font-family: sans-serif; margin-bottom: 20px;">');
+    template.print('  <h2 style="color: #2c3e50;">Attendance List</h2>');
+    template.print('  <p style="font-size: 16px;">Hello, <b>' + current.instructor.getDisplayValue() + '</b>!</p>');
+    template.print('  <p>Below are the confirmed students for today\'s training.</p>');
+    template.print('</div>');
+    
+    template.print('<table align="center" style="width: 90%; border-collapse: collapse; font-family: sans-serif; background-color: #ffffff; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">');
+    
+   
+    template.print('  <thead>');
+    template.print('    <tr style="background-color: #4a90e2; color: #ffffff;">');
+    template.print('      <th style="padding: 12px; border: 1px solid #ddd; text-align: center;">Student Name</th>');
+    template.print('      <th style="padding: 12px; border: 1px solid #ddd; text-align: center;">Email Address</th>');
+    template.print('    </tr>');
+    template.print('  </thead>');
+
+    
+    template.print('  <tbody>');
+
+    var enrollmentGR = new GlideRecord('x_1974477_skillnow_enrollment');
+    enrollmentGR.addQuery('schedule', current.sys_id);
+    enrollmentGR.addQuery('state', '2'); 
+    enrollmentGR.query();
+
+    if (enrollmentGR.hasNext()) {
+        while (enrollmentGR.next()) {
+            template.print('    <tr>');
+            template.print('      <td style="padding: 10px; border: 1px solid #ddd; text-align: left;">' + enrollmentGR.student.getDisplayValue() + '</td>');
+            template.print('      <td style="padding: 10px; border: 1px solid #ddd; text-align: left;">' + enrollmentGR.student.email + '</td>');
+            template.print('    </tr>');
+        }
+    } else {
+        
+        template.print('    <tr>');
+        template.print('      <td colspan="2" style="padding: 20px; border: 1px solid #ddd; text-align: center; color: #e74c3c;">No confirmed students for this session.</td>');
+        template.print('    </tr>');
+    }
+    
+    template.print('  </tbody>');
+    template.print('</table>');
+
+    
+    template.print('<div style="text-align: center; margin-top: 30px; font-family: sans-serif; color: #7f8c8d; font-size: 12px;">');
+    template.print('  <p>This is an automated message from the <b>SkillNow</b> platform.</p>');
+    template.print('</div>');
+
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-14 04:52:15</sys_created_on>
+        <sys_id>61dcb9d693b487101b12f987dd03d63c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>skillnow_enrollment_table</sys_name>
+        <sys_package display_value="SkillNow" source="x_1974477_skillnow">6e1ce8a9937003101b12f987dd03d608</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</sys_scope>
+        <sys_update_name>sys_script_email_61dcb9d693b487101b12f987dd03d63c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-14 05:05:38</sys_updated_on>
+    </sys_script_email>
+</record_update>

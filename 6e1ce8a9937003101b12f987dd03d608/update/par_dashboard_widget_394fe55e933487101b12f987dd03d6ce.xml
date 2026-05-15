@@ -2,7 +2,7 @@
     <par_dashboard_widget action="INSERT_OR_UPDATE">
         <canvas display_value="">b54fe55e933487101b12f987dd03d6b3</canvas>
         <component display_value="List - Simple">2b1c080881e05dc63b917044290b233f</component>
-        <component_props>{"table":"x_1974477_skillnow_enrollment","columnPreferenceKey":"","fixedQuery":"state=1","followFilters":true,"listTitle":"List of Training Participations Pending Approval","columns":"","maxColumns":5,"query":"active=true","groupByField":"","hideViewAll":false,"hideHighlightedValues":false,"showBorder":true,"bare":false,"highlightedValueConfigId":"","hideHighlightContent":false,"highlightContent":{"patterns":[],"color":""},"hideLinks":false,"nrlLandmark":true,"wordWrap":false,"overrideWordWrapUserPref":false,"maxCharLimit":4000,"hideEmptyStateImage":false,"hidePersonalization":false,"hideDotwalk":false,"hideColumnReorder":false,"hideRowSelector":false,"hideColumnGrouping":false,"hideColumnResizing":false,"hideColumnFiltering":false,"hideColumnSorting":false,"hideHeader":false,"hideTitle":false,"hideTitleRowCount":false,"hideLastRefreshedText":false,"hideRefreshButton":false,"hideInlineEditing":false,"isDashboard":true,"id":"listTitle","value":"List of Training Participations Pending Approval","propLabel":"Title","noDebounce":true}</component_props>
+        <component_props>{"table":"x_1974477_skillnow_enrollment","columnPreferenceKey":"","fixedQuery":"state=2","followFilters":true,"listTitle":"List of Training Participations Pending Approval","columns":"","maxColumns":"","query":"active=true","groupByField":"","hideViewAll":false,"hideHighlightedValues":false,"showBorder":true,"bare":false,"highlightedValueConfigId":"","hideHighlightContent":false,"highlightContent":{"patterns":[],"color":""},"hideLinks":false,"nrlLandmark":true,"wordWrap":false,"overrideWordWrapUserPref":false,"maxCharLimit":4000,"hideEmptyStateImage":false,"hidePersonalization":false,"hideDotwalk":false,"hideColumnReorder":false,"hideRowSelector":false,"hideColumnGrouping":false,"hideColumnResizing":false,"hideColumnFiltering":false,"hideColumnSorting":false,"hideHeader":false,"hideTitle":false,"hideTitleRowCount":false,"hideLastRefreshedText":false,"hideRefreshButton":false,"hideInlineEditing":false,"isDashboard":true,"id":"limit","value":15,"propLabel":"Maximum rows","noDebounce":true,"limit":15}</component_props>
         <h>38</h>
         <name/>
         <stored_component/>
@@ -12,7 +12,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>394fe55e933487101b12f987dd03d6ce</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package display_value="SkillNow" source="x_1974477_skillnow">6e1ce8a9937003101b12f987dd03d608</sys_package>
@@ -20,7 +20,7 @@
         <sys_scope display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</sys_scope>
         <sys_update_name>par_dashboard_widget_394fe55e933487101b12f987dd03d6ce</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-14 06:18:35</sys_updated_on>
+        <sys_updated_on>2026-05-15 10:23:55</sys_updated_on>
         <visualization/>
         <w>32</w>
         <widget_props/>

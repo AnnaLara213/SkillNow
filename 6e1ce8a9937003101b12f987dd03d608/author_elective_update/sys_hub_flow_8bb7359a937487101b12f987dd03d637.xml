@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=124094000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27800</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>This flow will send a list of those enrolled in that day's training to the administrator.</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>skillnow__send_daily_enrollment_list</internal_name>
+        <label_cache>[{"name":"e4a21c31-bab8-40eb-8faa-c02fe58da149.item.training_date","label":"2 - For Each➛Training Schedule Record➛Training Date","reference":"","reference_display":"Training Date","type":"glide_date","base_type":"glide_date","parent_table_name":"x_1974477_skillnow_training_schedule","column_name":"training_date","usedInstances":{"9485a46f-5007-405f-961c-ee149437bf5a":["ah_subject"]}},{"name":"e4a21c31-bab8-40eb-8faa-c02fe58da149.item.course.name","label":"2 - For Each➛Training Schedule Record➛Course➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"x_1974477_skillnow_course","column_name":"name","usedInstances":{"9485a46f-5007-405f-961c-ee149437bf5a":["ah_subject"]}},{"name":"e4a21c31-bab8-40eb-8faa-c02fe58da149.item.instructor.email","label":"2 - For Each➛Training Schedule Record➛Instructor➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"9485a46f-5007-405f-961c-ee149437bf5a":["ah_to"]}},{"name":"c706a419-be19-4de6-b830-9f9959576643.Records","label":"1 - Look Up Records➛Training Schedule Records","reference":"x_1974477_skillnow_training_schedule","reference_display":"Training Schedule","type":"records","base_type":"records","usedInstances":{"e4a21c31-bab8-40eb-8faa-c02fe58da149":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e4a21c31-bab8-40eb-8faa-c02fe58da149.item","label":"2 - For Each➛Training Schedule Record","reference":"x_1974477_skillnow_training_schedule","reference_display":"Training Schedule","type":"reference","base_type":"reference","usedInstances":{"d86afdf1-956d-4fe9-b4df-b8e356de4463":["record"],"9485a46f-5007-405f-961c-ee149437bf5a":["record"],"da6a4396-6a6d-4d77-a5f9-086a2121b165":["conditions"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"e4a21c31-bab8-40eb-8faa-c02fe58da149.item.instructor","label":"2 - For Each➛Training Schedule Record➛Instructor","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1974477_skillnow_training_schedule","column_name":"instructor","usedInstances":{}},{"name":"e4a21c31-bab8-40eb-8faa-c02fe58da149.item.sys_id","label":"2 - For Each➛Training Schedule Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_1974477_skillnow_training_schedule","column_name":"sys_id","usedInstances":{}}]</label_cache>
+        <master_snapshot>6f2eb19a93b487101b12f987dd03d602</master_snapshot>
+        <master_snapshot_digest/>
+        <name>SkillNow - Send Daily Enrollment List </name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>3b2eb19a93b487101b12f987dd03d65a</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-14 04:28:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8bb7359a937487101b12f987dd03d637</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>SkillNow - Send Daily Enrollment List </sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SkillNow" source="x_1974477_skillnow">6e1ce8a9937003101b12f987dd03d608</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</sys_scope>
+        <sys_update_name>sys_hub_flow_8bb7359a937487101b12f987dd03d637</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-15 15:00:23</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=8bb7359a937487101b12f987dd03d637"/>
+    <sys_variable_value action="DELETE" query="document_key=8bb7359a937487101b12f987dd03d637"/>
+    <sys_flow_timer_trigger action="DELETE">
+        <active>true</active>
+        <day_of_month>1</day_of_month>
+        <day_of_week/>
+        <name/>
+        <published_version/>
+        <run_period/>
+        <run_start>2026-05-14 04:57:01</run_start>
+        <sys_class_name>sys_flow_timer_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-14 04:57:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3b2eb19a93b487101b12f987dd03d65a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-14 04:57:01</sys_updated_on>
+        <time>1970-01-01 15:00:00</time>
+        <timer_type>11</timer_type>
+        <trigger_definition/>
+    </sys_flow_timer_trigger>
+    <sys_flow_trigger_auto_script action="DELETE" query="name=Trigger:3b2eb19a93b487101b12f987dd03d65a^sys_idNOT INb72eb19a93b487101b12f987dd03d65b"/>
+    <sys_flow_trigger_auto_script action="DELETE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <max_drift/>
+        <name>Trigger:3b2eb19a93b487101b12f987dd03d65a</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2026-05-14 04:57:01</run_start>
+        <run_time>1970-01-01 15:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[sn_flow_trigger.FlowTriggerAPI.fireTimerTrigger('3b2eb19a93b487101b12f987dd03d65a');]]></script>
+        <sys_class_name>sys_flow_trigger_auto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-14 04:57:01</sys_created_on>
+        <sys_id>b72eb19a93b487101b12f987dd03d65b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-14 04:57:01</sys_updated_on>
+        <time_zone/>
+        <trigger display_value="">3b2eb19a93b487101b12f987dd03d65a</trigger>
+        <upgrade_safe>true</upgrade_safe>
+    </sys_flow_trigger_auto_script>
+    <sys_trigger_runner_mapping action="DELETE" query="identifier=8bb7359a937487101b12f987dd03d637"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=8bb7359a937487101b12f987dd03d637"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=8bb7359a937487101b12f987dd03d637^sys_idNOT IN87b7f95e937487101b12f987dd03d6d0"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>8bb7359a937487101b12f987dd03d637</id>
+        <name>SkillNow - Send Daily Enrollment List </name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-14 04:28:51</sys_created_on>
+        <sys_id>87b7f95e937487101b12f987dd03d6d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-14 04:28:51</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=87b7f95e937487101b12f987dd03d6d0"/>
+    <sys_hub_flow_input action="DELETE" query="model=8bb7359a937487101b12f987dd03d637"/>
+    <sys_hub_flow_output action="DELETE" query="model=8bb7359a937487101b12f987dd03d637"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=8bb7359a937487101b12f987dd03d637"/>
+    <sys_hub_trigger_instance_v2 action="DELETE" query="flow=8bb7359a937487101b12f987dd03d637^sys_idNOT IN03e9bd5293b487101b12f987dd03d6d7"/>
+    <sys_hub_trigger_instance_v2 action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="SkillNow - Send Daily Enrollment List ">8bb7359a937487101b12f987dd03d637</flow>
+        <generation_source/>
+        <name>Daily</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-14 04:38:24</sys_created_on>
+        <sys_id>03e9bd5293b487101b12f987dd03d6d7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-14 04:56:59</sys_updated_on>
+        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/21STWvcMBD9K0XnjZF3k6b1rRAWemgDyZJLCGYsjXcFo4/K8iZuyH/vyFaWfFToMm80b9576P5ZEHRIohE7Y1GshHEJowPaTQEZ3ZPR2KalZ8FpSD5OoklxxJXoo7c7tIEg8eMeaGDQR41RNLWUK3EEGvF2Gn5q5mIGBzazFr65y2X9/VKeyZrvF3nZSMmXu+pgSEd0orl/WIkAkWdTZn7+0DKZfAP6HLWSarPmI+X623ndfd109VpvAPGCCT84fa8l/cfvWyf4lNBp1Cebn8KICPra0XR6ceAsF9sWngbzFwtVxB5ZvMKleSpbbQaOclpgdfBG4XVIxrsFSdBRmVGeRut+Lw641tjDSOmuBMrIODAfhqw5qyiS+tuDf7x5Xbg1bjZYmuQV0KmClKLpxoRDThwJLRO1FkIwbt+G6I9mHmYttppjq3ryj7x0MHtXgcrCK44Iqi3jVzN8B9FkF7+YhodfZvftnzHvXXwUxe1imh+UULYGqXyiQUUT0g9ecHz9dS8P/wBMXZbqygIAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>daily</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE" query="flow=8bb7359a937487101b12f987dd03d637^sys_idNOT IN0fe9bd5293b487101b12f987dd03d6df,8fe9bd5293b487101b12f987dd03d6d9,c769371a9374c7101b12f987dd03d676"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="SkillNow - Send Daily Enrollment List ">8bb7359a937487101b12f987dd03d637</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>e4a21c31-bab8-40eb-8faa-c02fe58da149</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-14 04:38:24</sys_created_on>
+        <sys_id>0fe9bd5293b487101b12f987dd03d6df</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-15 14:57:05</sys_updated_on>
+        <ui_id>da6a4396-6a6d-4d77-a5f9-086a2121b165</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VXTVPbMBD9KxmfnYwdOx/k1oEy0wMwA0wvlGpke51oUGTXkpNAJv+9K8t2TBIgpGkLR612tW9X763lu6XFImtkDWPfcajbGw4cx/Mcp9/3QuoGgdcPAyfwA8u2BJ0CeioacMDljPJcrxfEPRn4/mBA5APjXCRzAiJLOJ+CUOgXMZly+vi9dP/a3AsnjEcZCGt0d29bKc0whYLMGi03ttRjCoTTADgecasRtC41HHtv9M+Ct6vRCaolEeboJIs0Fse2YKFARICpYsol2NaUioiqJHusLRnQ6ErwtWHCsMSRZWnnhWRPePzQ0X4xYFkhmL16Sco+GXM4SVgIV6liiTAWA9RsJjyfiktTgO4wxDTnquowWnKJ50GqMWsQJaL4ZpLMr6uE50wU5ZWbPAkpr1dUqYwFuQKp7wI46AsjU5qmTIxJmiUzVgQjlmlnzHHRiTnefASSjUWHhhp4B1tEO+doPyvM32nGdBUXeAwGIyDG8baJabpM8qzoyoyEPJfFRkaFNGdZq6JX5FeuUZqqy/qIaRE6yDBjqfqCATMoS1nZexG856wpESYiYjqnbLBchhOIcg4/cgyPlkvwadcNPbcd0GDY9h0I2sOY0nbodGPoDSPq+icdpmC6Wv2Uiqoy0NsWxBFPPkxOp8169+3VzuBdDSyF9cxWCss9mrAQ7n+Slsryj6est7RiCn5DMOHgVRL01vctk0wR07mGYraZfjBDzxnw6NnA3wNcFXylydYKHl/CWxI01jk2Jn/300/+D0lPBBQR028mOBPFhxeBHoe3zuvD62SDB8X1N+a8tlEZbrOXtlTSejp8yhb3WvF3D5BV4A0iat0alDuAV/O1Or6krnc06nrd91EXiXO3rNHXXdvR4Op9pa+u8n/S/nTTH9nVCHBX9zX1Tw/L6b43Z1fn3NCm9y5xNpllds5eINiRX28viM3+m+qeYGiZjxixkjmLxqDW2SuvKFFzyh927ZfsqjVUlPfHL0H/Ve313bXOUAMkA4lX1XwKuvjY2B4Prm3Mh02Hb0LBuGjevhCryAu6aF3XGHcCL0cEq3OUnPaP+P76F5+3qvE71VP1/1P8+hxK4fvfb4Puza8PAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=0fe9bd5293b487101b12f987dd03d6df"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="SkillNow - Send Daily Enrollment List ">8bb7359a937487101b12f987dd03d637</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-14 04:38:24</sys_created_on>
+        <sys_id>8fe9bd5293b487101b12f987dd03d6d9</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-14 15:56:25</sys_updated_on>
+        <ui_id>c706a419-be19-4de6-b830-9f9959576643</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VXXU/bMBT9K1WeNimqElpa6NMmENIeoBKgvSBkObHTerh2Zjv9APHfdx07SWkLlK5s8Ojr+3Hu9TmOc/MQMBIMgqOsG0U4PjzqR1GnE0W9XifFcZJ0emkSJd0kCAOBJxQ8DU44heUU88Ku5yg+7ne7/T7Sd4xzIWfIKMwEEyOk0zElRelOmM45Xvz0UdfepXXVuKRjxomiIhjc3IZBjhUUNFQFg4eVLbPIKeI4odxmsnhaFxZcuHUvT4LXe7MFqiUSLrVUxGKJwoDODRWEQqkMc03DYIIFwUaqRW1RFJOh4I1hzISBjIF1nmt2D+mPIuuXUWgrpW6vXiI/LmdOx5KldJgbJoWzOKBuU/JiIi5cA3bQNMMFN9WgwVJoyEdzi9mC8Iiyq7GcXVYFz5go2/ObXKaY1ytsjGJJYai2Z0E5nUAiNMF5bg85V3LKymDAMmmPOCzaGQceEKrZSLRxaoG3YUS4fQb209L8EytmuziHNBAMgBiH00Zu6FoWqpzKFKW80OWGwkK7XMFjOSv0u7AoXde+P+RGBA46VSw33yFgSn0rj+FWdD+MGkqkUhBma+olztcEh57o8OJaErz49gtPsas5GOl2QkdMWJ9hVm5/+briAHDrrXV9vEOF3eR1stz/trPbGLxpoF5oT2xeaPHehAZw/5PUjCo+ntJe045r+BUBpf0XSXDYnLeWyiA3uSUFrTN+Z4aeMcrJkw/AFuCq4KElWytZPIfXEzSzNVa+BAef/kvwIekJgAhy82aCM+Fuw4Luh7fRy5fX8QoPyuNvWFva4IZdZy9uGdm63/2WLc+14u8WIKvAK0DUunYoNwCv7tcqvaduZ2/U7Ry8jbpAnJuHGn09tQ0Drt5b9ugq/3vrj1f9gV1LAfHjbU39k91qxm+teWBrrmiz8yZxLjPL7Zw+Q7A9v+aeEVv4nuoeQ6ivh5xY0YyRETVN9cqLSDPD/G7TvmdXraGyvb9+GXZf1F4vbnQGGkCKajiq5adhDI+N9eshDp15t9vhhzB0VA5vW4hV5Dmety5rjBuB+yuC1TU8p7t7fH/9i89bNfiN6qnm/yl+hXal8O0f+/AGoc0PAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=8fe9bd5293b487101b12f987dd03d6d9"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="SkillNow - Send Daily Enrollment List ">8bb7359a937487101b12f987dd03d637</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>e4a21c31-bab8-40eb-8faa-c02fe58da149</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-14 13:55:27</sys_created_on>
+        <sys_id>c769371a9374c7101b12f987dd03d676</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-14 16:32:08</sys_updated_on>
+        <ui_id>9485a46f-5007-405f-961c-ee149437bf5a</ui_id>
+        <updation_source/>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=c769371a9374c7101b12f987dd03d676"/>
+    <sys_hub_sub_flow_instance_v2 action="DELETE" query="flow=8bb7359a937487101b12f987dd03d637"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE" query="flow=8bb7359a937487101b12f987dd03d637^sys_idNOT IN47e9bd5293b487101b12f987dd03d6dd"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">43e9bd5293b487101b12f987dd03d6dc</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="SkillNow - Send Daily Enrollment List ">8bb7359a937487101b12f987dd03d637</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-14 04:38:24</sys_created_on>
+        <sys_id>47e9bd5293b487101b12f987dd03d6dd</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-15 14:57:05</sys_updated_on>
+        <ui_id>e4a21c31-bab8-40eb-8faa-c02fe58da149</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/51STU/jMBD9Lz63UT5KIL0hrZA4sEiAuCAUTexJa+HYXttpCVH+O+Mm7a447qXpvJl5855nRmb6YPvgX8yt93Kn2fbtfcWkjhj9H5mGDtmWyYCdZyt2ANXHeBz5dVrCJqvWDdLPRmC5bm6KdF21VXVVXV2X5aZInpAbJ/w0UauQ3ioYXv+fge+lEg4XkRYcaQvo2Hb8kQqDxVpBg4oGLQzULwWFWSXaKksrXuRlkadpfrPJmrJoslwUgKKkunPn/WL6xxtEdgrdhZc+UUWerhh+BtQCaVALyuOKdaAFBOMGtg2uJ8AhiEethkvFXupAdCzWfnr5RdxZmsbCFskRxzl5CevlIWeY743k+GiDNHpGAjRq6eFG9Z3+PcuPK8AWehXOKyCk98SHNmqOKhZJ7fPeHJ/OA++kPvlbkspwUJcIQnCy6QP6uAZU2BFR3YG1Uu9q68xBnppJS5fsFAVJq8yRhsZzS4BH4Qk9ESR3hP86wa/gZHTxQDTUPJ3c13/6OHf2sSiuZ9NU4LmTNtwS3QEXcdN7vNeZyc+HIZBLTwNfInZ/vvKYGGjJkv8LHY37iFL/YtM3EncLNy8DAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=8bb7359a937487101b12f987dd03d637"/>
+    <sys_hub_flow_variable action="DELETE" query="model=8bb7359a937487101b12f987dd03d637"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_8bb7359a937487101b12f987dd03d637"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_8bb7359a937487101b12f987dd03d637"/>
+    <sys_hub_flow_snapshot action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27800</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>This flow will send a list of those enrolled in that day's training to the administrator.</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>skillnow__send_daily_enrollment_list</internal_name>
+        <label_cache>[{"name":"e4a21c31-bab8-40eb-8faa-c02fe58da149.item.training_date","label":"2 - For Each➛Training Schedule Record➛Training Date","reference":"","reference_display":"Training Date","type":"glide_date","base_type":"glide_date","parent_table_name":"x_1974477_skillnow_training_schedule","column_name":"training_date","usedInstances":{"9485a46f-5007-405f-961c-ee149437bf5a":["ah_subject"]}},{"name":"e4a21c31-bab8-40eb-8faa-c02fe58da149.item.course.name","label":"2 - For Each➛Training Schedule Record➛Course➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"x_1974477_skillnow_course","column_name":"name","usedInstances":{"9485a46f-5007-405f-961c-ee149437bf5a":["ah_subject"]}},{"name":"e4a21c31-bab8-40eb-8faa-c02fe58da149.item.instructor.email","label":"2 - For Each➛Training Schedule Record➛Instructor➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"9485a46f-5007-405f-961c-ee149437bf5a":["ah_to"]}},{"name":"c706a419-be19-4de6-b830-9f9959576643.Records","label":"1 - Look Up Records➛Training Schedule Records","reference":"x_1974477_skillnow_training_schedule","reference_display":"Training Schedule","type":"records","base_type":"records","usedInstances":{"e4a21c31-bab8-40eb-8faa-c02fe58da149":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e4a21c31-bab8-40eb-8faa-c02fe58da149.item","label":"2 - For Each➛Training Schedule Record","reference":"x_1974477_skillnow_training_schedule","reference_display":"Training Schedule","type":"reference","base_type":"reference","usedInstances":{"d86afdf1-956d-4fe9-b4df-b8e356de4463":["record"],"9485a46f-5007-405f-961c-ee149437bf5a":["record"],"da6a4396-6a6d-4d77-a5f9-086a2121b165":["conditions"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"e4a21c31-bab8-40eb-8faa-c02fe58da149.item.instructor","label":"2 - For Each➛Training Schedule Record➛Instructor","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1974477_skillnow_training_schedule","column_name":"instructor","usedInstances":{}},{"name":"e4a21c31-bab8-40eb-8faa-c02fe58da149.item.sys_id","label":"2 - For Each➛Training Schedule Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_1974477_skillnow_training_schedule","column_name":"sys_id","usedInstances":{}}]</label_cache>
+        <master>true</master>
+        <name>SkillNow - Send Daily Enrollment List </name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="SkillNow - Send Daily Enrollment List ">8bb7359a937487101b12f987dd03d637</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-14 04:57:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6f2eb19a93b487101b12f987dd03d602</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-15 14:57:08</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="DELETE" query="documentkey=6f2eb19a93b487101b12f987dd03d602"/>
+    <sys_variable_value action="DELETE" query="document_key=6f2eb19a93b487101b12f987dd03d602"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=6f2eb19a93b487101b12f987dd03d602"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=6f2eb19a93b487101b12f987dd03d602^sys_idNOT INeb2eb19a93b487101b12f987dd03d604"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>6f2eb19a93b487101b12f987dd03d602</id>
+        <name>SkillNow - Send Daily Enrollment List </name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-14 04:57:01</sys_created_on>
+        <sys_id>eb2eb19a93b487101b12f987dd03d604</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-14 04:57:01</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=eb2eb19a93b487101b12f987dd03d604"/>
+    <sys_hub_flow_input action="DELETE" query="model=6f2eb19a93b487101b12f987dd03d602"/>
+    <sys_hub_flow_output action="DELETE" query="model=6f2eb19a93b487101b12f987dd03d602"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=6f2eb19a93b487101b12f987dd03d602"/>
+    <sys_hub_trigger_instance_v2 action="DELETE" query="flow=6f2eb19a93b487101b12f987dd03d602^sys_idNOT IN332eb19a93b487101b12f987dd03d63c"/>
+    <sys_hub_trigger_instance_v2 action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="SkillNow - Send Daily Enrollment List ">6f2eb19a93b487101b12f987dd03d602</flow>
+        <generation_source/>
+        <name>Daily</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-14 04:57:01</sys_created_on>
+        <sys_id>332eb19a93b487101b12f987dd03d63c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-14 04:57:01</sys_updated_on>
+        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/21STWvcMBD9K0XnjZF3k6b1rRAWemgDyZJLCGYsjXcFo4/K8iZuyH/vyFaWfFToMm80b9576P5ZEHRIohE7Y1GshHEJowPaTQEZ3ZPR2KalZ8FpSD5OoklxxJXoo7c7tIEg8eMeaGDQR41RNLWUK3EEGvF2Gn5q5mIGBzazFr65y2X9/VKeyZrvF3nZSMmXu+pgSEd0orl/WIkAkWdTZn7+0DKZfAP6HLWSarPmI+X623ndfd109VpvAPGCCT84fa8l/cfvWyf4lNBp1Cebn8KICPra0XR6ceAsF9sWngbzFwtVxB5ZvMKleSpbbQaOclpgdfBG4XVIxrsFSdBRmVGeRut+Lw641tjDSOmuBMrIODAfhqw5qyiS+tuDf7x5Xbg1bjZYmuQV0KmClKLpxoRDThwJLRO1FkIwbt+G6I9mHmYttppjq3ryj7x0MHtXgcrCK44Iqi3jVzN8B9FkF7+YhodfZvftnzHvXXwUxe1imh+UULYGqXyiQUUT0g9ecHz9dS8P/wBMXZbqygIAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>daily</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE" query="flow=6f2eb19a93b487101b12f987dd03d602^sys_idNOT IN2f69771a9374c7101b12f987dd03d631,672eb19a93b487101b12f987dd03d638,6f2eb19a93b487101b12f987dd03d62a"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="SkillNow - Send Daily Enrollment List ">6f2eb19a93b487101b12f987dd03d602</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>e4a21c31-bab8-40eb-8faa-c02fe58da149</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-14 13:55:29</sys_created_on>
+        <sys_id>2f69771a9374c7101b12f987dd03d631</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-14 16:32:11</sys_updated_on>
+        <ui_id>9485a46f-5007-405f-961c-ee149437bf5a</ui_id>
+        <updation_source/>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=2f69771a9374c7101b12f987dd03d631"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="SkillNow - Send Daily Enrollment List ">6f2eb19a93b487101b12f987dd03d602</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>e4a21c31-bab8-40eb-8faa-c02fe58da149</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-14 04:57:01</sys_created_on>
+        <sys_id>672eb19a93b487101b12f987dd03d638</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-15 14:57:08</sys_updated_on>
+        <ui_id>da6a4396-6a6d-4d77-a5f9-086a2121b165</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VXXU/bMBT9K1WeS5U0gRbeJhjSpG1IY9rLxqIb22mtuU5mO0Cp+t93HTtp1AbWSkVi2qPvh33uvec4zvdVwGlwEUzzJAwhOp1OwjCOw/DsLCYQZVl8RrIwS7JgGEhYMIw0kAmGy3sQlV0/ptH5JEkmk1T/4kLI4iFlUhVCLJg0GEe5LgUsv/nw910fmXNBFZPBxfe7YVCCwiMMU8HFasu1L0YBGRMY+tWD3MJslmW7TGufs33spg0+O0ehqIUSDgP2aJikDDHkIDQbBguQFEyhlq1FMaA3UmwMc44VXgSBDX7U/AnPnYY2LmdYFWHO1y5T3yZnzq/AwK1RFTGV8qFkXnDCtOsHZTlUwlx2bS7gpjS8kC7Fle2yC1Et5GfXjqDdoJkKWiqNIFhpC7XIfRn57bx4+NKgvOay7ol3ioKAaFdgjOJZZSyeVcAEs0NOF1CWXM7SUhX3vE5GLIvRTOBilAtkC2Waz+QIiAU+wr7C6BrtV7X5Gyhuq/iE22AyAuICGZK6EeqiUnUr71MiKl07FEjt9grWw0Av9aUArTeVY8vT35XF7frgK05d02wKUbw073CLe+aLWw/3kslpuKEcKSTlFoXuaEWTOaOVYD8qTKerFUtgHJE4Oskgm54kIctOpjnACQnHOTudUoiS8xE3bLFe/9QGjE+Md2V1xJ2PKcq6I40oL7st6WuTl+eO7WPfBl6e0dHkiXX8SwLFw9+ePg9XnGvBX2RHJi+S7HTDJ10ok7pednS3q5eDeb4HhIbnN5aZg2z5HCpP85wzQfu+QtfWsfUVGv+fX6E3SXIERFM3PS4Fl/WTAoG+FvvDl6/Y8y2e1fTqfHOsDTTZ1QAMTDF4OlgJe8BplHCLZw++Ojw9EJv7vqbM9l3fGL0A4qMJIB4fRwCrtsy2kT09b16RdppN/JONh+14pGAnIVr3CeygM6NDzxyvdwUcH6TgLtmc5+oZzh35ufmMIoeveQXMMdWflzr9pg+czpjZnN5E0cI8gPjV5/eMS5tB1eW9wtM1eVG2Z9FGoqiUVDGNw+u+XSN8Hu3eIdHQmQ+7QvbA0rTjEzwOvrRgehH6awSVzmb1bLr3yIfW6kmeHPHB+Ga/pM2wejXYzOyf+OM7nhDu/gAaGnWZ7BAAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=672eb19a93b487101b12f987dd03d638"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="SkillNow - Send Daily Enrollment List ">6f2eb19a93b487101b12f987dd03d602</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-14 04:57:01</sys_created_on>
+        <sys_id>6f2eb19a93b487101b12f987dd03d62a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-14 04:57:01</sys_updated_on>
+        <ui_id>c706a419-be19-4de6-b830-9f9959576643</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VX22rjMBD9leCnXQjBbtKkzdMuLYWFtoGm9KUUIVtyoq0ieyU5l4b8+44s+ULidhNIoGUfNTPSnBmdM5af1x4j3tC7iHu+j4Pzi4Hvd7u+3+93IxyEYbcfhX7YC722J/CMQqTGIaewnGOemfUSBZeDXm8wQOqVcS6SBdISM8HEBKloSkmWhxOmUo5XT27XowtpjauQaMo4kVR4w+eXtpdiCQk1ld5wveXaFzHHIeUmmYO8VYFepeUS5T5ru61va91bRyKJgeK3PbrUVBAKGGLMFW17MywI1olclRZJMRkJXhmmTGg40TPBS8XeIO+Fb+JiClVF1PrKJXLdsub4Gms81jKLdCZdaDRNWESV7QehMc64vqrbbMAo1SwRdost2+5OeDYT97YdXnlAcTlgyRSAoKkp1CB3ZcTjabJ4KFDeMJH3xDl5EmFerrDWkoWZNnjWHuV0BgehGU5TQ4xUJnOWbwYss86Ew6ITc+AOoYpNRAdHBngH+oo7N2C/zs1PWDJTxR0cA5sBEOPAEGSvUCWZzFs5RxHPVO6QWCh7lrdpe2qlrjhWqqocWo7+ZAa37YOrGNmmmS2RZKn+CUfMqStu095LNOd+RbkoEYQZFKqmnFImUCUd3T8mBK9+/MZzbHMOJ6oT0gkTJmYU5+5v37cCAG7p2lXZCTIcU6R5hwqRXtVb1NQ2J9cd223TAU6uwdHkCnV8JcFC8s+n18MVaFvwDxlGgw9Jdl7xSSVSI9vLmg53dXMwz/eAUPB8ZJjZClfvoXI0jxnlpOmrdGMcW1+ls//zq/QpSQ6ACLK3xwRnws7hjJ6K/f7HI/Zyi2c5vSru5zaY9rsawC2dtN4OVsIecAoljCF369HiaYBYzPucMtuzvjA6AXSPJoDu2XEEsC7LLBvZ0PPiVWlus4h/M/F4Ox4oWNsQbJoEdlDO4NCcZ5tdAXcPUnCdbNZz/Q7njvz8fEeR7VOOgClsdfmQ1S9aMDKhuspeRJFELzB/bfI7xqHiovLyTvCU7X0o235QSRSUgiRVcHn1t2wAz6PdGRK0rfmwEbIHlqIdd3jZeijBNCJ0YwSUTif53dTnyK/S6kjeO+KD8dN+SYvLatRgcWdf4g/weEJ4+QtUO7T1ChEAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=6f2eb19a93b487101b12f987dd03d62a"/>
+    <sys_hub_sub_flow_instance_v2 action="DELETE" query="flow=6f2eb19a93b487101b12f987dd03d602"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE" query="flow=6f2eb19a93b487101b12f987dd03d602^sys_idNOT IN672eb19a93b487101b12f987dd03d628"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">43e9bd5293b487101b12f987dd03d6dc</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="SkillNow - Send Daily Enrollment List ">6f2eb19a93b487101b12f987dd03d602</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-14 04:57:01</sys_created_on>
+        <sys_id>672eb19a93b487101b12f987dd03d628</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-15 14:57:08</sys_updated_on>
+        <ui_id>e4a21c31-bab8-40eb-8faa-c02fe58da149</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/51TXW+jMBD8L34miI+UlrxVrSpVurtKadWXUxUt9pJYZ2zONkk5xH+/dSC06mNfQna8OzszmIGZzreddy/m1jm512zz+y1iUgeM/g9MQ4Nsw6THxrGIHUF1oR4Gfp0UsE7LVYX0sxZYrKqbPFmVdVlelVfXRbHO4y1yY4UbRxoV0rUK+tfvM/CDVMLiLLIFS9o8WrYZvhxJQQvSUtRlmpQ8z4o8S5LsZp1WRV6lmcgBRUGECipU1Po4u/ti1vdtKO0kYQZ+zDPbBaVHEJElEcN3j1ogra9BOYxYA1qAN7ZnG287AiyCeNKqXzoOUnuiY6H33cl/tDFNktBYIxniOB0u5W7OcYLre/DwTNTcd3Zu5QcjObopCoE1dMrffcamhqfWS6OnEQ+Vukwb1TX615QEWwgur42QzpEIbIPRIH32UT8fzGl7Ufkg9TmU+VAZDmqpwHsrq84HPQNDhQ0R7RpoW6n3u9aaozwPk5Ym3isq4lqZEy0NVzQGHoTHlCvED4Tfn+FXsDK4+Ek0NDxGzPXuToFzH14oxN3fLiiZnM0edlMMYYRb2fpbWnDEWe74Fm79xL1kyqUjCS8Be7x8K+Ggpxsk+WfoZOyfIP4DG/8DyTInu3UDAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=6f2eb19a93b487101b12f987dd03d602"/>
+    <sys_hub_flow_variable action="DELETE" query="model=6f2eb19a93b487101b12f987dd03d602"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_6f2eb19a93b487101b12f987dd03d602"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_6f2eb19a93b487101b12f987dd03d602"/>
+    <sys_hub_flow action="DELETE">
+        <sys_id>8bb7359a937487101b12f987dd03d637</sys_id>
+        <latest_snapshot>6f2eb19a93b487101b12f987dd03d602</latest_snapshot>
+        <compiler_build>glide-yokohama-12-18-2024__patch11-12-16-2025_01-04-2026_2103.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="DELETE" query="plan_id=8bb7359a937487101b12f987dd03d637^sys_idNOT INb72eb19a93b487101b12f987dd03d66c"/>
+    <sys_flow_trigger_plan action="DELETE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"b72eb19a93b487101b12f987dd03d66c","name":"plan","plan_signature":null}}</plan>
+        <plan_id>8bb7359a937487101b12f987dd03d637</plan_id>
+        <snapshot>6f2eb19a93b487101b12f987dd03d602</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-14 04:57:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b72eb19a93b487101b12f987dd03d66c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-14 14:00:07</sys_updated_on>
+        <trigger display_value="">3b2eb19a93b487101b12f987dd03d65a</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="DELETE" query="plan_id=8bb7359a937487101b12f987dd03d637"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</application>
+        <file_path/>
+        <instance_id>29db23acffd043d8c80bf8e4fc4fd991</instance_id>
+        <instance_name>dev381629</instance_name>
+        <name>sys_hub_flow_8bb7359a937487101b12f987dd03d637</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_flow"&gt;&lt;sys_hub_flow action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;false&lt;/active&gt;&lt;annotation/&gt;&lt;attributes&gt;browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=124094000,viewActivatedIn=naturalLanguage&lt;/attributes&gt;&lt;authored_on_release_version&gt;27800&lt;/authored_on_release_version&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description&gt;This flow will send a list of those enrolled in that day's training to the administrator.&lt;/description&gt;&lt;display_name_after_preview/&gt;&lt;flow_priority&gt;MEDIUM&lt;/flow_priority&gt;&lt;generation_source/&gt;&lt;internal_name&gt;skillnow__send_daily_enrollment_list&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"e4a21c31-bab8-40eb-8faa-c02fe58da149.item.training_date","label":"2 - For Each➛Training Schedule Record➛Training Date","reference":"","reference_display":"Training Date","type":"glide_date","base_type":"glide_date","parent_table_name":"x_1974477_skillnow_training_schedule","column_name":"training_date","usedInstances":{"9485a46f-5007-405f-961c-ee149437bf5a":["ah_subject"]}},{"name":"e4a21c31-bab8-40eb-8faa-c02fe58da149.item.course.name","label":"2 - For Each➛Training Schedule Record➛Course➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"x_1974477_skillnow_course","column_name":"name","usedInstances":{"9485a46f-5007-405f-961c-ee149437bf5a":["ah_subject"]}},{"name":"e4a21c31-bab8-40eb-8faa-c02fe58da149.item.instructor.email","label":"2 - For Each➛Training Schedule Record➛Instructor➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"9485a46f-5007-405f-961c-ee149437bf5a":["ah_to"]}},{"name":"c706a419-be19-4de6-b830-9f9959576643.Records","label":"1 - Look Up Records➛Training Schedule Records","reference":"x_1974477_skillnow_training_schedule","reference_display":"Training Schedule","type":"records","base_type":"records","usedInstances":{"e4a21c31-bab8-40eb-8faa-c02fe58da149":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e4a21c31-bab8-40eb-8faa-c02fe58da149.item","label":"2 - For Each➛Training Schedule Record","reference":"x_1974477_skillnow_training_schedule","reference_display":"Training Schedule","type":"reference","base_type":"reference","usedInstances":{"d86afdf1-956d-4fe9-b4df-b8e356de4463":["record"],"9485a46f-5007-405f-961c-ee149437bf5a":["record"],"da6a4396-6a6d-4d77-a5f9-086a2121b165":["conditions"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"e4a21c31-bab8-40eb-8faa-c02fe58da149.item.instructor","label":"2 - For Each➛Training Schedule Record➛Instructor","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1974477_skillnow_training_schedule","column_name":"instructor","usedInstances":{}},{"name":"e4a21c31-bab8-40eb-8faa-c02fe58da149.item.sys_id","label":"2 - For Each➛Training Schedule Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_1974477_skillnow_training_schedule","column_name":"sys_id","usedInstances":{}}]&lt;/label_cache&gt;&lt;master_snapshot&gt;6f2eb19a93b487101b12f987dd03d602&lt;/master_snapshot&gt;&lt;master_snapshot_digest/&gt;&lt;name&gt;SkillNow - Send Daily Enrollment List &lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;pre_compiled&gt;false&lt;/pre_compiled&gt;&lt;remote_trigger_id&gt;3b2eb19a93b487101b12f987dd03d65a&lt;/remote_trigger_id&gt;&lt;run_as&gt;system&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;show_draft_actions&gt;false&lt;/show_draft_actions&gt;&lt;show_triggered_flows&gt;false&lt;/show_triggered_flows&gt;&lt;status&gt;published&lt;/status&gt;&lt;substatus/&gt;&lt;sys_class_name&gt;sys_hub_flow&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-05-14 04:28:51&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;8bb7359a937487101b12f987dd03d637&lt;/sys_id&gt;&lt;sys_mod_count&gt;19&lt;/sys_mod_count&gt;&lt;sys_name&gt;SkillNow - Send Daily Enrollment List &lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="SkillNow" source="x_1974477_skillnow"&gt;6e1ce8a9937003101b12f987dd03d608&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SkillNow"&gt;6e1ce8a9937003101b12f987dd03d608&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_flow_8bb7359a937487101b12f987dd03d637&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-05-15 15:00:23&lt;/sys_updated_on&gt;&lt;type&gt;flow&lt;/type&gt;&lt;updation_source/&gt;&lt;version&gt;2&lt;/version&gt;&lt;/sys_hub_flow&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=8bb7359a937487101b12f987dd03d637"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=8bb7359a937487101b12f987dd03d637"/&gt;&lt;sys_flow_timer_trigger action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;day_of_month&gt;1&lt;/day_of_month&gt;&lt;day_of_week/&gt;&lt;name/&gt;&lt;published_version/&gt;&lt;run_period/&gt;&lt;run_start&gt;2026-05-14 04:57:01&lt;/run_start&gt;&lt;sys_class_name&gt;sys_flow_timer_trigger&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-05-14 04:57:01&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;3b2eb19a93b487101b12f987dd03d65a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_overrides/&gt;&lt;sys_scope display_value="SkillNow"&gt;6e1ce8a9937003101b12f987dd03d608&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-05-14 04:57:01&lt;/sys_updated_on&gt;&lt;time&gt;1970-01-01 15:00:00&lt;/time&gt;&lt;timer_type&gt;11&lt;/timer_type&gt;&lt;trigger_definition/&gt;&lt;/sys_flow_timer_trigger&gt;&lt;sys_flow_trigger_auto_script action="delete_multiple" query="name=Trigger:3b2eb19a93b487101b12f987dd03d65a^sys_idNOT INb72eb19a93b487101b12f987dd03d65b"/&gt;&lt;sys_flow_trigger_auto_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;business_calendar/&gt;&lt;condition/&gt;&lt;conditional&gt;false&lt;/conditional&gt;&lt;entered_time/&gt;&lt;max_drift/&gt;&lt;name&gt;Trigger:3b2eb19a93b487101b12f987dd03d65a&lt;/name&gt;&lt;offset/&gt;&lt;offset_type&gt;0&lt;/offset_type&gt;&lt;run_as display_value="System Administrator"&gt;6816f79cc0a8016401c5a33be04be441&lt;/run_as&gt;&lt;run_as_tz/&gt;&lt;run_dayofmonth&gt;1&lt;/run_dayofmonth&gt;&lt;run_dayofweek/&gt;&lt;run_period/&gt;&lt;run_start&gt;2026-05-14 04:57:01&lt;/run_start&gt;&lt;run_time&gt;1970-01-01 15:00:00&lt;/run_time&gt;&lt;run_type&gt;daily&lt;/run_type&gt;&lt;script&gt;&lt;![CDATA[sn_flow_trigger.FlowTriggerAPI.fireTimerTrigger('3b2eb19a93b487101b12f987dd03d65a');]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_flow_trigger_auto_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-05-14 04:57:01&lt;/sys_created_on&gt;&lt;sys_id&gt;b72eb19a93b487101b12f987dd03d65b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SkillNow"&gt;6e1ce8a9937003101b12f987dd03d608&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-05-14 04:57:01&lt;/sys_updated_on&gt;&lt;time_zone/&gt;&lt;trigger display_value=""&gt;3b2eb19a93b487101b12f987dd03d65a&lt;/trigger&gt;&lt;upgrade_safe&gt;true&lt;/upgrade_safe&gt;&lt;/sys_flow_trigger_auto_script&gt;&lt;sys_trigger_runner_mapping action="delete_multiple" query="identifier=8bb7359a937487101b12f987dd03d637"/&gt;&lt;sys_hub_flow_stage action="delete_multiple" query="flow=8bb7359a937487101b12f987dd03d637"/&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=8bb7359a937487101b12f987dd03d637^sys_idNOT IN87b7f95e937487101b12f987dd03d6d0"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;8bb7359a937487101b12f987dd03d637&lt;/id&gt;&lt;name&gt;SkillNow - Send Daily Enrollment List &lt;/name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-05-14 04:28:51&lt;/sys_created_on&gt;&lt;sys_id&gt;87b7f95e937487101b12f987dd03d6d0&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-05-14 04:28:51&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=87b7f95e937487101b12f987dd03d6d0"/&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=8bb7359a937487101b12f987dd03d637"/&gt;&lt;sys_hub_flow_output action="delete_multiple" query="model=8bb7359a937487101b12f987dd03d637"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=8bb7359a937487101b12f987dd03d637"/&gt;&lt;sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=8bb7359a937487101b12f987dd03d637^sys_idNOT IN03e9bd5293b487101b12f987dd03d6d7"/&gt;&lt;sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="SkillNow - Send Daily Enrollment List "&gt;8bb7359a937487101b12f987dd03d637&lt;/flow&gt;&lt;generation_source/&gt;&lt;name&gt;Daily&lt;/name&gt;&lt;published_version/&gt;&lt;remote_sys_id/&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-05-14 04:38:24&lt;/sys_created_on&gt;&lt;sys_id&gt;03e9bd5293b487101b12f987dd03d6d7&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-05-14 04:56:59&lt;/sys_updated_on&gt;&lt;trigger_definition display_value="Daily"&gt;89142dc0c32222002841b63b12d3ae8a&lt;/trigger_definition&gt;&lt;trigger_inputs&gt;H4sIAAAAAAAA/21STWvcMBD9K0XnjZF3k6b1rRAWemgDyZJLCGYsjXcFo4/K8iZuyH/vyFaWfFToMm80b9576P5ZEHRIohE7Y1GshHEJowPaTQEZ3ZPR2KalZ8FpSD5OoklxxJXoo7c7tIEg8eMeaGDQR41RNLWUK3EEGvF2Gn5q5mIGBzazFr65y2X9/VKeyZrvF3nZSMmXu+pgSEd0orl/WIkAkWdTZn7+0DKZfAP6HLWSarPmI+X623ndfd109VpvAPGCCT84fa8l/cfvWyf4lNBp1Cebn8KICPra0XR6ceAsF9sWngbzFwtVxB5ZvMKleSpbbQaOclpgdfBG4XVIxrsFSdBRmVGeRut+Lw641tjDSOmuBMrIODAfhqw5qyiS+tuDf7x5Xbg1bjZYmuQV0KmClKLpxoRDThwJLRO1FkIwbt+G6I9mHmYttppjq3ryj7x0MHtXgcrCK44Iqi3jVzN8B9FkF7+YhodfZvftnzHvXXwUxe1imh+UULYGqXyiQUUT0g9ecHz9dS8P/wBMXZbqygIAAA==&lt;/trigger_inputs&gt;&lt;trigger_outputs/&gt;&lt;trigger_type&gt;daily&lt;/trigger_type&gt;&lt;updation_source/&gt;&lt;/sys_hub_trigger_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="delete_multiple" query="flow=8bb7359a937487101b12f987dd03d637^sys_idNOT IN0fe9bd5293b487101b12f987dd03d6df,8fe9bd5293b487101b12f987dd03d6d9,c769371a9374c7101b12f987dd03d676"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Look Up Records"&gt;43400a1587003300663ca1bb36cb0b4b&lt;/action_type&gt;&lt;action_type_parent display_value="Look Up Records"&gt;d1c56ec50b30030085c083eb37673a50&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;43400a1587003300663ca1bb36cb0b4b&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="SkillNow - Send Daily Enrollment List "&gt;8bb7359a937487101b12f987dd03d637&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;3&lt;/order&gt;&lt;parent_ui_id&gt;e4a21c31-bab8-40eb-8faa-c02fe58da149&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-05-14 04:38:24&lt;/sys_created_on&gt;&lt;sys_id&gt;0fe9bd5293b487101b12f987dd03d6df&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_scope display_value="SkillNow"&gt;6e1ce8a9937003101b12f987dd03d608&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-05-15 14:57:05&lt;/sys_updated_on&gt;&lt;ui_id&gt;da6a4396-6a6d-4d77-a5f9-086a2121b165&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/9VXTVPbMBD9KxmfnYwdOx/k1oEy0wMwA0wvlGpke51oUGTXkpNAJv+9K8t2TBIgpGkLR612tW9X763lu6XFImtkDWPfcajbGw4cx/Mcp9/3QuoGgdcPAyfwA8u2BJ0CeioacMDljPJcrxfEPRn4/mBA5APjXCRzAiJLOJ+CUOgXMZly+vi9dP/a3AsnjEcZCGt0d29bKc0whYLMGi03ttRjCoTTADgecasRtC41HHtv9M+Ct6vRCaolEeboJIs0Fse2YKFARICpYsol2NaUioiqJHusLRnQ6ErwtWHCsMSRZWnnhWRPePzQ0X4xYFkhmL16Sco+GXM4SVgIV6liiTAWA9RsJjyfiktTgO4wxDTnquowWnKJ50GqMWsQJaL4ZpLMr6uE50wU5ZWbPAkpr1dUqYwFuQKp7wI46AsjU5qmTIxJmiUzVgQjlmlnzHHRiTnefASSjUWHhhp4B1tEO+doPyvM32nGdBUXeAwGIyDG8baJabpM8qzoyoyEPJfFRkaFNGdZq6JX5FeuUZqqy/qIaRE6yDBjqfqCATMoS1nZexG856wpESYiYjqnbLBchhOIcg4/cgyPlkvwadcNPbcd0GDY9h0I2sOY0nbodGPoDSPq+icdpmC6Wv2Uiqoy0NsWxBFPPkxOp8169+3VzuBdDSyF9cxWCss9mrAQ7n+Slsryj6est7RiCn5DMOHgVRL01vctk0wR07mGYraZfjBDzxnw6NnA3wNcFXylydYKHl/CWxI01jk2Jn/300/+D0lPBBQR028mOBPFhxeBHoe3zuvD62SDB8X1N+a8tlEZbrOXtlTSejp8yhb3WvF3D5BV4A0iat0alDuAV/O1Or6krnc06nrd91EXiXO3rNHXXdvR4Op9pa+u8n/S/nTTH9nVCHBX9zX1Tw/L6b43Z1fn3NCm9y5xNpllds5eINiRX28viM3+m+qeYGiZjxixkjmLxqDW2SuvKFFzyh927ZfsqjVUlPfHL0H/Ve313bXOUAMkA4lX1XwKuvjY2B4Prm3Mh02Hb0LBuGjevhCryAu6aF3XGHcCL0cEq3OUnPaP+P76F5+3qvE71VP1/1P8+hxK4fvfb4Puza8PAAA=&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=0fe9bd5293b487101b12f987dd03d6df"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Look Up Records"&gt;43400a1587003300663ca1bb36cb0b4b&lt;/action_type&gt;&lt;action_type_parent display_value="Look Up Records"&gt;d1c56ec50b30030085c083eb37673a50&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;43400a1587003300663ca1bb36cb0b4b&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="SkillNow - Send Daily Enrollment List "&gt;8bb7359a937487101b12f987dd03d637&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-05-14 04:38:24&lt;/sys_created_on&gt;&lt;sys_id&gt;8fe9bd5293b487101b12f987dd03d6d9&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_scope display_value="SkillNow"&gt;6e1ce8a9937003101b12f987dd03d608&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-05-14 15:56:25&lt;/sys_updated_on&gt;&lt;ui_id&gt;c706a419-be19-4de6-b830-9f9959576643&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/9VXXU/bMBT9K1WeNimqElpa6NMmENIeoBKgvSBkObHTerh2Zjv9APHfdx07SWkLlK5s8Ojr+3Hu9TmOc/MQMBIMgqOsG0U4PjzqR1GnE0W9XifFcZJ0emkSJd0kCAOBJxQ8DU44heUU88Ku5yg+7ne7/T7Sd4xzIWfIKMwEEyOk0zElRelOmM45Xvz0UdfepXXVuKRjxomiIhjc3IZBjhUUNFQFg4eVLbPIKeI4odxmsnhaFxZcuHUvT4LXe7MFqiUSLrVUxGKJwoDODRWEQqkMc03DYIIFwUaqRW1RFJOh4I1hzISBjIF1nmt2D+mPIuuXUWgrpW6vXiI/LmdOx5KldJgbJoWzOKBuU/JiIi5cA3bQNMMFN9WgwVJoyEdzi9mC8Iiyq7GcXVYFz5go2/ObXKaY1ytsjGJJYai2Z0E5nUAiNMF5bg85V3LKymDAMmmPOCzaGQceEKrZSLRxaoG3YUS4fQb209L8EytmuziHNBAMgBiH00Zu6FoWqpzKFKW80OWGwkK7XMFjOSv0u7AoXde+P+RGBA46VSw33yFgSn0rj+FWdD+MGkqkUhBma+olztcEh57o8OJaErz49gtPsas5GOl2QkdMWJ9hVm5/+briAHDrrXV9vEOF3eR1stz/trPbGLxpoF5oT2xeaPHehAZw/5PUjCo+ntJe045r+BUBpf0XSXDYnLeWyiA3uSUFrTN+Z4aeMcrJkw/AFuCq4KElWytZPIfXEzSzNVa+BAef/kvwIekJgAhy82aCM+Fuw4Luh7fRy5fX8QoPyuNvWFva4IZdZy9uGdm63/2WLc+14u8WIKvAK0DUunYoNwCv7tcqvaduZ2/U7Ry8jbpAnJuHGn09tQ0Drt5b9ugq/3vrj1f9gV1LAfHjbU39k91qxm+teWBrrmiz8yZxLjPL7Zw+Q7A9v+aeEVv4nuoeQ6ivh5xY0YyRETVN9cqLSDPD/G7TvmdXraGyvb9+GXZf1F4vbnQGGkCKajiq5adhDI+N9eshDp15t9vhhzB0VA5vW4hV5Dmety5rjBuB+yuC1TU8p7t7fH/9i89bNfiN6qnm/yl+hXal8O0f+/AGoc0PAAA=&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=8fe9bd5293b487101b12f987dd03d6d9"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Send Email"&gt;c1806bf4a70323008299b39f087901cb&lt;/action_type&gt;&lt;action_type_parent display_value="Send Email"&gt;98c181d20b100300d97d8bf637673ab5&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;c1806bf4a70323008299b39f087901cb&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="SkillNow - Send Daily Enrollment List "&gt;8bb7359a937487101b12f987dd03d637&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;4&lt;/order&gt;&lt;parent_ui_id&gt;e4a21c31-bab8-40eb-8faa-c02fe58da149&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-05-14 13:55:27&lt;/sys_created_on&gt;&lt;sys_id&gt;c769371a9374c7101b12f987dd03d676&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_scope display_value="SkillNow"&gt;6e1ce8a9937003101b12f987dd03d608&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-05-14 16:32:08&lt;/sys_updated_on&gt;&lt;ui_id&gt;9485a46f-5007-405f-961c-ee149437bf5a&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;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&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=c769371a9374c7101b12f987dd03d676"/&gt;&lt;sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=8bb7359a937487101b12f987dd03d637"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=8bb7359a937487101b12f987dd03d637^sys_idNOT IN47e9bd5293b487101b12f987dd03d6dd"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;43e9bd5293b487101b12f987dd03d6dc&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="SkillNow - Send Daily Enrollment List "&gt;8bb7359a937487101b12f987dd03d637&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="For Each"&gt;098e1dc5c3e232002841b63b12d3ae33&lt;/logic_definition&gt;&lt;order&gt;2&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-05-14 04:38:24&lt;/sys_created_on&gt;&lt;sys_id&gt;47e9bd5293b487101b12f987dd03d6dd&lt;/sys_id&gt;&lt;sys_mod_count&gt;9&lt;/sys_mod_count&gt;&lt;sys_scope display_value="SkillNow"&gt;6e1ce8a9937003101b12f987dd03d608&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-05-15 14:57:05&lt;/sys_updated_on&gt;&lt;ui_id&gt;e4a21c31-bab8-40eb-8faa-c02fe58da149&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/51STU/jMBD9Lz63UT5KIL0hrZA4sEiAuCAUTexJa+HYXttpCVH+O+Mm7a447qXpvJl5855nRmb6YPvgX8yt93Kn2fbtfcWkjhj9H5mGDtmWyYCdZyt2ANXHeBz5dVrCJqvWDdLPRmC5bm6KdF21VXVVXV2X5aZInpAbJ/w0UauQ3ioYXv+fge+lEg4XkRYcaQvo2Hb8kQqDxVpBg4oGLQzULwWFWSXaKksrXuRlkadpfrPJmrJoslwUgKKkunPn/WL6xxtEdgrdhZc+UUWerhh+BtQCaVALyuOKdaAFBOMGtg2uJ8AhiEethkvFXupAdCzWfnr5RdxZmsbCFskRxzl5CevlIWeY743k+GiDNHpGAjRq6eFG9Z3+PcuPK8AWehXOKyCk98SHNmqOKhZJ7fPeHJ/OA++kPvlbkspwUJcIQnCy6QP6uAZU2BFR3YG1Uu9q68xBnppJS5fsFAVJq8yRhsZzS4BH4Qk9ESR3hP86wa/gZHTxQDTUPJ3c13/6OHf2sSiuZ9NU4LmTNtwS3QEXcdN7vNeZyc+HIZBLTwNfInZ/vvKYGGjJkv8LHY37iFL/YtM3EncLNy8DAAA=&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=8bb7359a937487101b12f987dd03d637"/&gt;&lt;sys_hub_flow_variable action="delete_multiple" query="model=8bb7359a937487101b12f987dd03d637"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_8bb7359a937487101b12f987dd03d637"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_8bb7359a937487101b12f987dd03d637"/&gt;&lt;sys_hub_flow_snapshot action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;true&lt;/active&gt;&lt;annotation/&gt;&lt;attributes&gt;browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage&lt;/attributes&gt;&lt;authored_on_release_version&gt;27800&lt;/authored_on_release_version&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description&gt;This flow will send a list of those enrolled in that day's training to the administrator.&lt;/description&gt;&lt;flow_priority&gt;MEDIUM&lt;/flow_priority&gt;&lt;internal_name&gt;skillnow__send_daily_enrollment_list&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"e4a21c31-bab8-40eb-8faa-c02fe58da149.item.training_date","label":"2 - For Each➛Training Schedule Record➛Training Date","reference":"","reference_display":"Training Date","type":"glide_date","base_type":"glide_date","parent_table_name":"x_1974477_skillnow_training_schedule","column_name":"training_date","usedInstances":{"9485a46f-5007-405f-961c-ee149437bf5a":["ah_subject"]}},{"name":"e4a21c31-bab8-40eb-8faa-c02fe58da149.item.course.name","label":"2 - For Each➛Training Schedule Record➛Course➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"x_1974477_skillnow_course","column_name":"name","usedInstances":{"9485a46f-5007-405f-961c-ee149437bf5a":["ah_subject"]}},{"name":"e4a21c31-bab8-40eb-8faa-c02fe58da149.item.instructor.email","label":"2 - For Each➛Training Schedule Record➛Instructor➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"9485a46f-5007-405f-961c-ee149437bf5a":["ah_to"]}},{"name":"c706a419-be19-4de6-b830-9f9959576643.Records","label":"1 - Look Up Records➛Training Schedule Records","reference":"x_1974477_skillnow_training_schedule","reference_display":"Training Schedule","type":"records","base_type":"records","usedInstances":{"e4a21c31-bab8-40eb-8faa-c02fe58da149":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e4a21c31-bab8-40eb-8faa-c02fe58da149.item","label":"2 - For Each➛Training Schedule Record","reference":"x_1974477_skillnow_training_schedule","reference_display":"Training Schedule","type":"reference","base_type":"reference","usedInstances":{"d86afdf1-956d-4fe9-b4df-b8e356de4463":["record"],"9485a46f-5007-405f-961c-ee149437bf5a":["record"],"da6a4396-6a6d-4d77-a5f9-086a2121b165":["conditions"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"e4a21c31-bab8-40eb-8faa-c02fe58da149.item.instructor","label":"2 - For Each➛Training Schedule Record➛Instructor","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1974477_skillnow_training_schedule","column_name":"instructor","usedInstances":{}},{"name":"e4a21c31-bab8-40eb-8faa-c02fe58da149.item.sys_id","label":"2 - For Each➛Training Schedule Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_1974477_skillnow_training_schedule","column_name":"sys_id","usedInstances":{}}]&lt;/label_cache&gt;&lt;master&gt;true&lt;/master&gt;&lt;name&gt;SkillNow - Send Daily Enrollment List &lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;parent_flow display_value="SkillNow - Send Daily Enrollment List "&gt;8bb7359a937487101b12f987dd03d637&lt;/parent_flow&gt;&lt;remote_trigger_id/&gt;&lt;run_as&gt;system&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;status&gt;published&lt;/status&gt;&lt;sys_class_name&gt;sys_hub_flow_snapshot&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-05-14 04:57:01&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;6f2eb19a93b487101b12f987dd03d602&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SkillNow"&gt;6e1ce8a9937003101b12f987dd03d608&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-05-15 14:57:08&lt;/sys_updated_on&gt;&lt;type&gt;flow&lt;/type&gt;&lt;version&gt;2&lt;/version&gt;&lt;/sys_hub_flow_snapshot&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=6f2eb19a93b487101b12f987dd03d602"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=6f2eb19a93b487101b12f987dd03d602"/&gt;&lt;sys_hub_flow_stage action="delete_multiple" query="flow=6f2eb19a93b487101b12f987dd03d602"/&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=6f2eb19a93b487101b12f987dd03d602^sys_idNOT INeb2eb19a93b487101b12f987dd03d604"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;6f2eb19a93b487101b12f987dd03d602&lt;/id&gt;&lt;name&gt;SkillNow - Send Daily Enrollment List &lt;/name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-05-14 04:57:01&lt;/sys_created_on&gt;&lt;sys_id&gt;eb2eb19a93b487101b12f987dd03d604&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-05-14 04:57:01&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=eb2eb19a93b487101b12f987dd03d604"/&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=6f2eb19a93b487101b12f987dd03d602"/&gt;&lt;sys_hub_flow_output action="delete_multiple" query="model=6f2eb19a93b487101b12f987dd03d602"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=6f2eb19a93b487101b12f987dd03d602"/&gt;&lt;sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=6f2eb19a93b487101b12f987dd03d602^sys_idNOT IN332eb19a93b487101b12f987dd03d63c"/&gt;&lt;sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="SkillNow - Send Daily Enrollment List "&gt;6f2eb19a93b487101b12f987dd03d602&lt;/flow&gt;&lt;generation_source/&gt;&lt;name&gt;Daily&lt;/name&gt;&lt;published_version/&gt;&lt;remote_sys_id/&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-05-14 04:57:01&lt;/sys_created_on&gt;&lt;sys_id&gt;332eb19a93b487101b12f987dd03d63c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-05-14 04:57:01&lt;/sys_updated_on&gt;&lt;trigger_definition display_value="Daily"&gt;89142dc0c32222002841b63b12d3ae8a&lt;/trigger_definition&gt;&lt;trigger_inputs&gt;H4sIAAAAAAAA/21STWvcMBD9K0XnjZF3k6b1rRAWemgDyZJLCGYsjXcFo4/K8iZuyH/vyFaWfFToMm80b9576P5ZEHRIohE7Y1GshHEJowPaTQEZ3ZPR2KalZ8FpSD5OoklxxJXoo7c7tIEg8eMeaGDQR41RNLWUK3EEGvF2Gn5q5mIGBzazFr65y2X9/VKeyZrvF3nZSMmXu+pgSEd0orl/WIkAkWdTZn7+0DKZfAP6HLWSarPmI+X623ndfd109VpvAPGCCT84fa8l/cfvWyf4lNBp1Cebn8KICPra0XR6ceAsF9sWngbzFwtVxB5ZvMKleSpbbQaOclpgdfBG4XVIxrsFSdBRmVGeRut+Lw641tjDSOmuBMrIODAfhqw5qyiS+tuDf7x5Xbg1bjZYmuQV0KmClKLpxoRDThwJLRO1FkIwbt+G6I9mHmYttppjq3ryj7x0MHtXgcrCK44Iqi3jVzN8B9FkF7+YhodfZvftnzHvXXwUxe1imh+UULYGqXyiQUUT0g9ecHz9dS8P/wBMXZbqygIAAA==&lt;/trigger_inputs&gt;&lt;trigger_outputs/&gt;&lt;trigger_type&gt;daily&lt;/trigger_type&gt;&lt;updation_source/&gt;&lt;/sys_hub_trigger_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="delete_multiple" query="flow=6f2eb19a93b487101b12f987dd03d602^sys_idNOT IN2f69771a9374c7101b12f987dd03d631,672eb19a93b487101b12f987dd03d638,6f2eb19a93b487101b12f987dd03d62a"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Send Email"&gt;c1806bf4a70323008299b39f087901cb&lt;/action_type&gt;&lt;action_type_parent display_value="Send Email"&gt;98c181d20b100300d97d8bf637673ab5&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;c1806bf4a70323008299b39f087901cb&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="SkillNow - Send Daily Enrollment List "&gt;6f2eb19a93b487101b12f987dd03d602&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;4&lt;/order&gt;&lt;parent_ui_id&gt;e4a21c31-bab8-40eb-8faa-c02fe58da149&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-05-14 13:55:29&lt;/sys_created_on&gt;&lt;sys_id&gt;2f69771a9374c7101b12f987dd03d631&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_scope display_value="SkillNow"&gt;6e1ce8a9937003101b12f987dd03d608&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-05-14 16:32:11&lt;/sys_updated_on&gt;&lt;ui_id&gt;9485a46f-5007-405f-961c-ee149437bf5a&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+1aa2/bNhT9K4SKAQ1qu/I7dj4MbbKsBfoA6qD70BQCJVI2V0rUSCqJF/i/71JvWbZjN9maYrGB2OLz3HvPuZeS8+XWYsSaWgNybI9cf4DHdr/Xt+3j3mTi9ie+fTye2F2PWC0rxAGFkZJ6QprrK8xj03B7Swe41/X63baL3eP2wKZu+9jHuO3ZPZ8OjwnuDiYdpmmwWsE8wlTE8fJzNh1avAXjRNLQmn752rIiLGEnTaU1vV3r2hcqxy7lMPQCyznV6FMOed0EvYzMNRFeHNBQOyxvfJctcJb1oLdn0AOTDCq7ZdEbTUNCAY6PuaItK8AhwVrIZdEiKSYfQ142LFioYclXSgmPYU0V0guKaIAZR9dMLxBGKbCOZda7UexvANfvmaV8Cj7wDFYWeowAIqvS7GQuhe63Zbd/hjWeaRl7OpaFpwXzqEq9SaiPY65Pq23pgI+RZiJMp2js8ny24HEQfkidaBULVCIZKwBDI+MbYyxsDob7s4W4/pSDPWdh4sXMK1x4mBdX/oxi6S3OGeUm1GEcuDC2ZWGtJXNjbWACKTiMKvdxEqhmLxhJOU1CGeAoYuHciaS4YsmGAD/ozDlcdHwurmG+YvOwgz1jaweihzvn0H6WNH/GkhnD38MyMHnVstRSnXKsVGk++N/5KzboU2fU4ZjZTkI4M9mTLNKvYKsrmhm7amXS60528ZkMSt5W1izld+N0J+PBYDx21DfGeQiWaYlZaIxX3oKSmNOm6i6yIWhWDjlMhnvALmXoJhtsMiOTYKPtXXUu+pB2ZALsHijAlIaZ/i5AdDrNC6nckM7gFZo7tuua26K1x6GxQjl7i6wupn9HMEAS5aSsz2xLNv8OId0lH3s0ct2ROxz3Sx5OPJ+MXX+Ex16/5N01JF0ZYPnNSZJuRUPdpkCydHKYJvbAkmsCEjWPCUV/5KB24cxE4goBmS9cVwggfXmeeLdQSO9eJSqlJtICQTD5EgpTAck0lmVLL7BGTCEF0eqgC4FYZlVlRgstRYyCWGkYpqGnJr5arRs8Xt1ldMhazzZy5acQ5sMLcLi7EOCS2HjhaPF9J8cOC1USbiE7CfdWK9QU7f0XPEzve5he1EDR9EMma8AB8V1T9SxvzBTd363otMQ1BF0pafbjFdfPoh0DnLOAJYRIVf/wciI7OUXtGo08ryKnB7i32mPznNCnp00khxB68H0l6onRPx2juztv2OmoxiP3oSm9x+45pV+vcdo9mNTDJ1L/T0g93E0rr0YkFbt/Uk9XiH0GJ44leqUNVzA4Db1jSk8ROuQE44lYKtox26xW7YOmFk8IwJN001O5R4fvwIPZ3dHJRT8rYrMpXoeIf/R0RPvh2n94oeOdVPJ79YohyPJhy9ce2xflK928gSbj8EIHfI3Bby7evyv5O75n8RoNh/3RE4PvXb2ia9IjUkRRZtuDVbA0A6VtxoCcIvB110Cgs0RKx2ZpUwbeAJHQZWzbfYIurUvr5DI0IyDdhzpv70KjeZsOGkrBuXHV7zLv94mTuMHpOw4X4psTR076REh1ss8TZBa4BklQ9Ly6RicEmj4/OkK3lyGC1zq0FyU288XTMvmklxZ0JTPMq+glsMCS03SS+dsbR5gQiOgUde3o5gS5iUDartBaBNAY3SAlILroGU1eJ+mscpfMFy+KTV5q8p9jqLks81FnTmsPr54fPUaQ6cPFncDKriK4J2lP4voXL+BqlRPQZL4LGoDVmqI1chB21TTLF6Fu+ziAM9AUvQJ58hZSOFRtRSXzTxCkvPY1I3oxRSO7YnndZNu8C6dITFispujYDBdXVJrMMEULRsDmhmPqVm4E6WLv21yCtaQNqU/A5s96Xp8OYcv82k9eJ6gIUy8Bq0E/bcwh90yRBw6ncsv+VQyLXhNCgOWcwSJ2bf7aqTEL1KK3NYZg3kGWr5mTW9tPXnuYEqWdbyjnopUSwoMTngjnFWYWGarnOL6QDsXeovHkcKecqku2srZoD1yvKTDDPFY3D9o9EfpMBpQgDr5Ews/TnUKACmlB8DK12DyGVwoKzHSfvfallD8x7wqFusOK0nNSJ20pGwr1J8HZHowqmKqnTpO7hukGH6I74pLdb+yKibuxFGyDAkeU7wJSu3tJd98Yg03Er2Xc5LfPRpSyzNO17V+KQEC4OI7Abyj/tqfrgWN4Y9pvDJT78aVn3vUcw6mv74DThHVosemVmTdLg9Udn+XlYvGjEMxS2SY/Zf9wML+ZCrsXig2FdhuVXu7kUmGKOXLu2vH5+nnu18YJb9o82+VHFOChinBYdVQ//bizjtxRFj+IMvWmxxZKOusHlHVfHW131jY/lCOM/HfWi20Vua1FBFYN1xLwa6rM765zDKfr1lpCbCS/mflvkg9QiGZLBUltQxrcVma2pbdN7cltgqRwDxjWjmkn1mq1+voP9eb5K54mAAA=&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=2f69771a9374c7101b12f987dd03d631"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Look Up Records"&gt;43400a1587003300663ca1bb36cb0b4b&lt;/action_type&gt;&lt;action_type_parent display_value="Look Up Records"&gt;d1c56ec50b30030085c083eb37673a50&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;43400a1587003300663ca1bb36cb0b4b&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="SkillNow - Send Daily Enrollment List "&gt;6f2eb19a93b487101b12f987dd03d602&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;3&lt;/order&gt;&lt;parent_ui_id&gt;e4a21c31-bab8-40eb-8faa-c02fe58da149&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-05-14 04:57:01&lt;/sys_created_on&gt;&lt;sys_id&gt;672eb19a93b487101b12f987dd03d638&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_scope display_value="SkillNow"&gt;6e1ce8a9937003101b12f987dd03d608&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-05-15 14:57:08&lt;/sys_updated_on&gt;&lt;ui_id&gt;da6a4396-6a6d-4d77-a5f9-086a2121b165&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+VXXU/bMBT9K1WeS5U0gRbeJhjSpG1IY9rLxqIb22mtuU5mO0Cp+t93HTtp1AbWSkVi2qPvh33uvec4zvdVwGlwEUzzJAwhOp1OwjCOw/DsLCYQZVl8RrIwS7JgGEhYMIw0kAmGy3sQlV0/ptH5JEkmk1T/4kLI4iFlUhVCLJg0GEe5LgUsv/nw910fmXNBFZPBxfe7YVCCwiMMU8HFasu1L0YBGRMY+tWD3MJslmW7TGufs33spg0+O0ehqIUSDgP2aJikDDHkIDQbBguQFEyhlq1FMaA3UmwMc44VXgSBDX7U/AnPnYY2LmdYFWHO1y5T3yZnzq/AwK1RFTGV8qFkXnDCtOsHZTlUwlx2bS7gpjS8kC7Fle2yC1Et5GfXjqDdoJkKWiqNIFhpC7XIfRn57bx4+NKgvOay7ol3ioKAaFdgjOJZZSyeVcAEs0NOF1CWXM7SUhX3vE5GLIvRTOBilAtkC2Waz+QIiAU+wr7C6BrtV7X5Gyhuq/iE22AyAuICGZK6EeqiUnUr71MiKl07FEjt9grWw0Av9aUArTeVY8vT35XF7frgK05d02wKUbw073CLe+aLWw/3kslpuKEcKSTlFoXuaEWTOaOVYD8qTKerFUtgHJE4Oskgm54kIctOpjnACQnHOTudUoiS8xE3bLFe/9QGjE+Md2V1xJ2PKcq6I40oL7st6WuTl+eO7WPfBl6e0dHkiXX8SwLFw9+ePg9XnGvBX2RHJi+S7HTDJ10ok7pednS3q5eDeb4HhIbnN5aZg2z5HCpP85wzQfu+QtfWsfUVGv+fX6E3SXIERFM3PS4Fl/WTAoG+FvvDl6/Y8y2e1fTqfHOsDTTZ1QAMTDF4OlgJe8BplHCLZw++Ojw9EJv7vqbM9l3fGL0A4qMJIB4fRwCrtsy2kT09b16RdppN/JONh+14pGAnIVr3CeygM6NDzxyvdwUcH6TgLtmc5+oZzh35ufmMIoeveQXMMdWflzr9pg+czpjZnN5E0cI8gPjV5/eMS5tB1eW9wtM1eVG2Z9FGoqiUVDGNw+u+XSN8Hu3eIdHQmQ+7QvbA0rTjEzwOvrRgehH6awSVzmb1bLr3yIfW6kmeHPHB+Ga/pM2wejXYzOyf+OM7nhDu/gAaGnWZ7BAAAA==&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=672eb19a93b487101b12f987dd03d638"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Look Up Records"&gt;43400a1587003300663ca1bb36cb0b4b&lt;/action_type&gt;&lt;action_type_parent display_value="Look Up Records"&gt;d1c56ec50b30030085c083eb37673a50&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;43400a1587003300663ca1bb36cb0b4b&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="SkillNow - Send Daily Enrollment List "&gt;6f2eb19a93b487101b12f987dd03d602&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-05-14 04:57:01&lt;/sys_created_on&gt;&lt;sys_id&gt;6f2eb19a93b487101b12f987dd03d62a&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="SkillNow"&gt;6e1ce8a9937003101b12f987dd03d608&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-05-14 04:57:01&lt;/sys_updated_on&gt;&lt;ui_id&gt;c706a419-be19-4de6-b830-9f9959576643&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+VX22rjMBD9leCnXQjBbtKkzdMuLYWFtoGm9KUUIVtyoq0ieyU5l4b8+44s+ULidhNIoGUfNTPSnBmdM5af1x4j3tC7iHu+j4Pzi4Hvd7u+3+93IxyEYbcfhX7YC722J/CMQqTGIaewnGOemfUSBZeDXm8wQOqVcS6SBdISM8HEBKloSkmWhxOmUo5XT27XowtpjauQaMo4kVR4w+eXtpdiCQk1ld5wveXaFzHHIeUmmYO8VYFepeUS5T5ru61va91bRyKJgeK3PbrUVBAKGGLMFW17MywI1olclRZJMRkJXhmmTGg40TPBS8XeIO+Fb+JiClVF1PrKJXLdsub4Gms81jKLdCZdaDRNWESV7QehMc64vqrbbMAo1SwRdost2+5OeDYT97YdXnlAcTlgyRSAoKkp1CB3ZcTjabJ4KFDeMJH3xDl5EmFerrDWkoWZNnjWHuV0BgehGU5TQ4xUJnOWbwYss86Ew6ITc+AOoYpNRAdHBngH+oo7N2C/zs1PWDJTxR0cA5sBEOPAEGSvUCWZzFs5RxHPVO6QWCh7lrdpe2qlrjhWqqocWo7+ZAa37YOrGNmmmS2RZKn+CUfMqStu095LNOd+RbkoEYQZFKqmnFImUCUd3T8mBK9+/MZzbHMOJ6oT0gkTJmYU5+5v37cCAG7p2lXZCTIcU6R5hwqRXtVb1NQ2J9cd223TAU6uwdHkCnV8JcFC8s+n18MVaFvwDxlGgw9Jdl7xSSVSI9vLmg53dXMwz/eAUPB8ZJjZClfvoXI0jxnlpOmrdGMcW1+ls//zq/QpSQ6ACLK3xwRnws7hjJ6K/f7HI/Zyi2c5vSru5zaY9rsawC2dtN4OVsIecAoljCF369HiaYBYzPucMtuzvjA6AXSPJoDu2XEEsC7LLBvZ0PPiVWlus4h/M/F4Ox4oWNsQbJoEdlDO4NCcZ5tdAXcPUnCdbNZz/Q7njvz8fEeR7VOOgClsdfmQ1S9aMDKhuspeRJFELzB/bfI7xqHiovLyTvCU7X0o235QSRSUgiRVcHn1t2wAz6PdGRK0rfmwEbIHlqIdd3jZeijBNCJ0YwSUTif53dTnyK/S6kjeO+KD8dN+SYvLatRgcWdf4g/weEJ4+QtUO7T1ChEAAA==&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=6f2eb19a93b487101b12f987dd03d62a"/&gt;&lt;sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=6f2eb19a93b487101b12f987dd03d602"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=6f2eb19a93b487101b12f987dd03d602^sys_idNOT IN672eb19a93b487101b12f987dd03d628"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;43e9bd5293b487101b12f987dd03d6dc&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="SkillNow - Send Daily Enrollment List "&gt;6f2eb19a93b487101b12f987dd03d602&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="For Each"&gt;098e1dc5c3e232002841b63b12d3ae33&lt;/logic_definition&gt;&lt;order&gt;2&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-05-14 04:57:01&lt;/sys_created_on&gt;&lt;sys_id&gt;672eb19a93b487101b12f987dd03d628&lt;/sys_id&gt;&lt;sys_mod_count&gt;16&lt;/sys_mod_count&gt;&lt;sys_scope display_value="SkillNow"&gt;6e1ce8a9937003101b12f987dd03d608&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-05-15 14:57:08&lt;/sys_updated_on&gt;&lt;ui_id&gt;e4a21c31-bab8-40eb-8faa-c02fe58da149&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/51TXW+jMBD8L34miI+UlrxVrSpVurtKadWXUxUt9pJYZ2zONkk5xH+/dSC06mNfQna8OzszmIGZzreddy/m1jm512zz+y1iUgeM/g9MQ4Nsw6THxrGIHUF1oR4Gfp0UsE7LVYX0sxZYrKqbPFmVdVlelVfXRbHO4y1yY4UbRxoV0rUK+tfvM/CDVMLiLLIFS9o8WrYZvhxJQQvSUtRlmpQ8z4o8S5LsZp1WRV6lmcgBRUGECipU1Po4u/ti1vdtKO0kYQZ+zDPbBaVHEJElEcN3j1ogra9BOYxYA1qAN7ZnG287AiyCeNKqXzoOUnuiY6H33cl/tDFNktBYIxniOB0u5W7OcYLre/DwTNTcd3Zu5QcjObopCoE1dMrffcamhqfWS6OnEQ+Vukwb1TX615QEWwgur42QzpEIbIPRIH32UT8fzGl7Ufkg9TmU+VAZDmqpwHsrq84HPQNDhQ0R7RpoW6n3u9aaozwPk5Ym3isq4lqZEy0NVzQGHoTHlCvED4Tfn+FXsDK4+Ek0NDxGzPXuToFzH14oxN3fLiiZnM0edlMMYYRb2fpbWnDEWe74Fm79xL1kyqUjCS8Be7x8K+Ggpxsk+WfoZOyfIP4DG/8DyTInu3UDAAA=&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=6f2eb19a93b487101b12f987dd03d602"/&gt;&lt;sys_hub_flow_variable action="delete_multiple" query="model=6f2eb19a93b487101b12f987dd03d602"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_6f2eb19a93b487101b12f987dd03d602"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_6f2eb19a93b487101b12f987dd03d602"/&gt;&lt;sys_hub_flow action="UPDATE"&gt;&lt;sys_id&gt;8bb7359a937487101b12f987dd03d637&lt;/sys_id&gt;&lt;latest_snapshot&gt;6f2eb19a93b487101b12f987dd03d602&lt;/latest_snapshot&gt;&lt;compiler_build&gt;glide-yokohama-12-18-2024__patch11-12-16-2025_01-04-2026_2103.zip&lt;/compiler_build&gt;&lt;/sys_hub_flow&gt;&lt;sys_flow_trigger_plan action="delete_multiple" query="plan_id=8bb7359a937487101b12f987dd03d637^sys_idNOT INb72eb19a93b487101b12f987dd03d66c"/&gt;&lt;sys_flow_trigger_plan action="INSERT_OR_UPDATE"&gt;&lt;binding_strategy&gt;com.snc.process_flow.engine.binding.RunAlways&lt;/binding_strategy&gt;&lt;plan&gt;{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"b72eb19a93b487101b12f987dd03d66c","name":"plan","plan_signature":null}}&lt;/plan&gt;&lt;plan_id&gt;8bb7359a937487101b12f987dd03d637&lt;/plan_id&gt;&lt;snapshot&gt;6f2eb19a93b487101b12f987dd03d602&lt;/snapshot&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-05-14 04:57:01&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;b72eb19a93b487101b12f987dd03d66c&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_overrides/&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-05-14 14:00:07&lt;/sys_updated_on&gt;&lt;trigger display_value=""&gt;3b2eb19a93b487101b12f987dd03d65a&lt;/trigger&gt;&lt;/sys_flow_trigger_plan&gt;&lt;sys_flow_subflow_plan action="delete_multiple" query="plan_id=8bb7359a937487101b12f987dd03d637"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1802174243</payload_hash>
+        <record_name>SkillNow - Send Daily Enrollment List </record_name>
+        <reverted_from/>
+        <source>fc5ee7b193f4c3101b12f987dd03d6e0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-15 15:00:29</sys_created_on>
+        <sys_id>15e1dd3e93bc4b101b12f987dd03d60b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19e2c273b7f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-15 15:00:29</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>81e1dd3e3ebc4b1030c848cc9acef30a</update_guid>
+        <update_guid_history>81e1dd3e3ebc4b1030c848cc9acef30a:1802174243,a42195faf9bc4b104cd2f39351a2f9c8:-1259494598,b31155fa1ebc4b10b1fd3d52d38d9877:606327742,568e3cf6cb3c4b1001cbe17aa152a9ab:78394015,0b49b8a6ff7cc7101495a6e2dc0fb61d:-1553339800,064938a6937cc710c4af5ec976a5f1ff:-1310061990,ac09fc66987cc7108f4135c599520f5c:1535366190,33f8bc662d7cc7104b51acad420ba656:1141844059,cb4d9422b0b8c710ac0d52a97a038f71:1652289022,1e4d5422f2b8c710a0673bb6d6e8e42b:-1557950553,6f155022cf78c71014881244e8506b5b:-1755749123,4f151022c878c7102b0079a92609a016:216889095,237a3b9a5b74c7101f5c846217d2a370:1551895306,be7af79a1c74c710f5f67816bf568a38:-2029672261,c079771a4774c710209b09d8657a00df:-1623262722,8f69371ae974c7107e4b50b89b590cbd:-1537150124,803eb19a77b487107663193020609082:-929453935,5f2e719aa6b487101edecffb9e2ef3a5:480899845,c7e9bd52a3b48710042b34127fa850f3:1615591132,0bb7f95eff748710c61f02647ce875d8:689053514</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-15 18:05:41</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>5e92f3cff2854ea0b4b507bc4272e764</sys_id>
+        <sys_metadata>8bb7359a937487101b12f987dd03d637</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SkillNow - Send Daily Enrollment List </sys_name>
+        <sys_package display_value="SkillNow" source="x_1974477_skillnow">6e1ce8a9937003101b12f987dd03d608</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SkillNow">6e1ce8a9937003101b12f987dd03d608</sys_scope>
+        <sys_scope_delete display_value="">48140e46cd6e482287cb3ded7b473911</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_8bb7359a937487101b12f987dd03d637</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_8bb7359a937487101b12f987dd03d637">15e1dd3e93bc4b101b12f987dd03d60b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-15 18:05:41</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
